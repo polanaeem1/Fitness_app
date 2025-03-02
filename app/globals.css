@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,16 +9,190 @@
   --background: #ffffff;
   --foreground: #171717;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  font-family: "outfit";
+  transition: all 1s;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
 }
-
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  background: rgb(11, 19, 32);
+  background: linear-gradient(
+    90deg,
+    rgba(11, 19, 32, 1) 0%,
+    rgba(10, 33, 49, 1) 56%,
+    rgba(10, 33, 49, 1) 97%
+  );
 }
+.big-opt:hover .button {
+  gap: 1.5rem;
+}
+.opt:hover .button {
+  gap: 1.5rem;
+}
+
+.a {
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+  cursor: pointer;
+  padding: 2rem 2rem;
+  border-radius: 2%;
+  -webkit-border-radius: 2%;
+  -moz-border-radius: 2%;
+  -ms-border-radius: 2%;
+  -o-border-radius: 2%;
+}
+
+.a h5,
+p {
+  position: relative;
+  z-index: 2;
+}
+
+.a:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-radius: 2%;
+  background: #ff003b;
+  transition: all 0.35s;
+  -webkit-border-radius: 2%;
+  -moz-border-radius: 2%;
+  -ms-border-radius: 2%;
+  -o-border-radius: 2%;
+}
+
+.a:hover {
+  color: #fff;
+}
+
+.a:hover:after {
+  width: 100%;
+}
+.a-active {
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  border: 2px solid #333;
+  background: #ff003b;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+  cursor: pointer;
+  padding: 2rem 2rem;
+  border-radius: 2%;
+  -webkit-border-radius: 2%;
+  -moz-border-radius: 2%;
+  -ms-border-radius: 2%;
+  -o-border-radius: 2%;
+}
+
+
+/* button*/
+
+:root {
+  --text-color: hsla(210, 50%, 85%, 1);
+  --shadow-color: hsla(210, 40%, 52%, .4);
+  --btn-color: hsl(210, 80%, 42%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.be {
+  position:relative;
+  padding: 10px 20px;  
+  border: none;
+  background: none;
+  cursor: pointer;
+  
+  font-family: "outfit";
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 30px;  
+  color: var(--text-color);
+  background-color: #34d399;
+  border-radius: 4px; 
+  z-index: 0;  
+  overflow: hidden;   
+}
+
+.be:focus {
+  outline-color: transparent;
+  box-shadow: #34d399 2px 2px 22px;
+}
+
+
+
+.be:hover .right::after {
+  transform: translate(0, -47%) rotate(0deg)
+}
+
+.be .right:hover::after {
+  transform: translate(0, -50%) rotate(-7deg)
+}
+
+.be .left:hover ~ .right::after {
+  transform: translate(0, -50%) rotate(7deg)
+}
+
+/* bubbles */
+.be::before {
+  content: '';
+  pointer-events: none;
+  opacity: .6;
+  background:
+    radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+    radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, var(--text-color) 3px, var(--text-color) 4px, transparent 4px),
+    radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, var(--text-color) 5px, var(--text-color) 6px, transparent 6px);
+
+  width: 100%;
+  height: 300%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: bubbles 5s linear infinite both;
+}
+
+@keyframes bubbles {
+  from {
+    transform: translate();
+    -webkit-transform: translate();
+    -moz-transform: translate();
+    -ms-transform: translate();
+    -o-transform: translate();
+}
+  to {
+    transform: translate(0, -66.666%);
+    -webkit-transform: translate(0, -66.666%);
+    -moz-transform: translate(0, -66.666%);
+    -ms-transform: translate(0, -66.666%);
+    -o-transform: translate(0, -66.666%);
+}
+}
+
+
+/* Hero */
