@@ -161,10 +161,10 @@ const page = () => {
           ) : (
             <>
               <div className="flex flex-col items-center justify-around h-screen w-full">
-                <div className="flex flex-row text-white mt-28 w-full h-[29rem]">
+                <div className="flex flex-row text-white  w-full">
                   {components[currentIndex]}
                 </div>
-                <div className="">
+                <div className=" absolute bottom-10">
                   <button
                     type="button"
                     className="bg-gray-800 text-white rounded-l-md border-r border-gray-100 py-2 hover:bg-red-700 hover:text-white px-3"
