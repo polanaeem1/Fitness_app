@@ -92,7 +92,7 @@ const Dinner = (props) => {
         animate={{ opacity: !visibale ? 1 : 0 }}
         className=" basis-3/6"
       >
-        <h3 className="text-[8rem] font-bold">Dinner</h3>
+        <h3 className="xl:text-[8rem] font-bold text-[6rem]">Dinner</h3>
         <div className="flex flex-row mt-4">
           <Dropdown
             title={milk1}

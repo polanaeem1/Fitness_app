@@ -100,7 +100,7 @@ const Lunch = (props) => {
         animate={{ opacity: !visibale ? 1 : 0 }}
         className=" basis-3/6"
       >
-        <h3 className="text-[8rem] font-bold">
+        <h3 className="xl:text-[8rem] font-bold text-[6rem]">
           <span className="text-[#06a5f6]">Lunch</span>
         </h3>
         <div className="flex flex-row mt-4">

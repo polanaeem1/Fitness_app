@@ -148,7 +148,7 @@ const page = () => {
           ) : (
             <>
               <div className="flex flex-col items-center justify-around h-screen w-full">
-                <div className="flex flex-row text-white  w-full">
+                <div className="flex flex-row text-white  w-full items-center">
                   {components[currentIndex]}
                 </div>
                 <div className=" absolute bottom-10">
