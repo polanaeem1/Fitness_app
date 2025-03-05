@@ -71,15 +71,15 @@ const page = () => {
   };
   return (
     <>
-      <div className="flex flex-col items-center  gap-28 w-full h-[85rem] ">
+      <div className="flex flex-col items-center  gap-28 w-full lg:h-[85rem] h-[92rem] ">
         <motion.div
           value={"weight-loss"}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2 }}
-          className="flex flex-col items-center gap-40 w-full h-screen "
+          className="flex flex-col items-center gap-40 w-full "
         >
-          <h3 className="text-white text-[4rem] font-bold mt-14">
+          <h3 className="text-white sm:text-[4rem] font-bold mt-14 text-[2rem]">
             Please fill this inputs
           </h3>
           <motion.div
@@ -89,15 +89,15 @@ const page = () => {
               opacity: 1,
             }}
             transition={{ duration: 2.4 }}
-            viewport={{ amount: "all" }}
-            className="flex flex-col items-center w-full"
+            viewport={{ amount:"some" }}
+            className="flex flex-col items-center w-full mb-48"
           >
             <motion.div
               value={"weight-loss"}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 2.5 }}
-              className="flex xl:flex-row xl:items-center xl:justify-around w-full lg:flex-wrap lg:items-center lg:justify-center lg:gap-5"
+              className=" flex flex-wrap justify-around items-center gap-16 xl:flex-row xl:items-center xl:justify-around w-full lg:flex-wrap lg:items-center lg:justify-center lg:gap-5"
             >
               <motion.div
                 initial={{ opacity: 0 }}
@@ -191,10 +191,10 @@ const page = () => {
             viewport={{ amount: "all" }}
             className="flex flex-col items-center gap-8"
           >
-            <label className="block text-5xl font-semibold text-white mb-4">
+            <label className="block lg:text-5xl font-semibold text-white mb-4 text-3xl text-center">
               What's your physical activity level ?
             </label>
-            <motion.div className="flex gap-12 mt-2 box-style">
+            <motion.div className="flex gap-2 mt-2 box-style flex-wrap justify-center lg:gap-12">
               <motion.div
                 whileHover={{
                   scale: 1.05,
@@ -209,7 +209,7 @@ const page = () => {
                   y: 0,
                 }}
                 transition={{ delay: 0.1 }}
-                viewport={{ amount: "all" }}
+                viewport={{ amount: "some" }}
                 className={light ? "a-active" : "a"}
                 onClick={() => {
                   setLight((light) => !light);
@@ -217,10 +217,10 @@ const page = () => {
                   setModerate(false);
                 }}
               >
-                <h5 className="text-white text-[1.5rem] font-bold">
+                <h5 className="text-white text-[1.2rem] lg:text-[1.5rem] font-bold">
                   Light Exercise
                 </h5>
-                <p className="text-white text-[1rem] font-bold">
+                <p className="text-white text-[0.8rem] lg:text-[1rem] font-bold">
                   1-2 days / week
                 </p>
               </motion.div>
@@ -240,7 +240,7 @@ const page = () => {
                   y: 0,
                 }}
                 transition={{ delay: 0.1 }}
-                viewport={{ amount: "all" }}
+                viewport={{ amount: "some" }}
                 className={moderate ? "a-active" : "a"}
                 onClick={() => {
                   setModerate((moderate) => !moderate);
@@ -248,10 +248,10 @@ const page = () => {
                   setLight(false);
                 }}
               >
-                <h5 className="text-white text-[1.5rem] font-bold">
+                <h5 className="text-white text-[1.2rem] lg:text-[1.5rem] font-bold">
                   Moderate Exercise
                 </h5>
-                <p className="text-white text-[1rem] font-bold">
+                <p className="text-white text-[0.8rem] lg:text-[1rem] font-bold">
                   3-4 days / week
                 </p>
               </motion.div>
@@ -271,7 +271,7 @@ const page = () => {
                   y: 0,
                 }}
                 transition={{ delay: 0.1 }}
-                viewport={{ amount: "all" }}
+                viewport={{ amount: "some" }}
                 className={heavy ? "a-active" : "a"}
                 onClick={() => {
                   setHeavy((heavy) => !heavy);
@@ -279,16 +279,16 @@ const page = () => {
                   setLight(false);
                 }}
               >
-                <h5 className="text-white text-[1.5rem] font-bold">
+                <h5 className="text-white text-[1.2rem] lg:text-[1.5rem] font-bold">
                   Heavy Exercise
                 </h5>
-                <p className="text-white text-[1rem] font-bold">
+                <p className="text-white text-[0.8rem] lg:text-[1rem] font-bold">
                   5-6 days / week
                 </p>
               </motion.div>
             </motion.div>
             <motion.button
-              className="be mt-14"
+              className="be md:mt-14 mb-12"
               variants={{
                 hidden: { opacity: 0, y: 75 },
                 visibale: { opacity: 1, y: 0 },
@@ -299,7 +299,7 @@ const page = () => {
                 y: 0,
               }}
               transition={{ delay: 0.1 }}
-              viewport={{ amount: "all" }}
+              viewport={{ amount: "some" }}
               onClick={handleSubmit}
             >
               Calculate
