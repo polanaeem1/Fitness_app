@@ -29,7 +29,7 @@ export default function Home() {
   };
   return (
     <>
-      <div className="container flex justify-center flex-col sm:w-screen h-screen mt-[-50]">
+      <div className="container flex justify-center flex-col sm:w-screen h-screen mt-[-90px]">
         <div className="hero pl-6 xl:pl-48 lg:pl-36 sm:pl-20">
           <h1 className="head text-white text-[2.5rem] sm:text-[4rem] font-bold lg:text-[6rem] xl:text-[10rem]">
             Healthy Body
