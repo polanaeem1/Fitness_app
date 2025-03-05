@@ -123,21 +123,12 @@ const page = () => {
         <AnimatePresence>
           {visibale && (
             <>
-              <motion.div className="basis-2/5" exit={{ opacity: 0 }}>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Rerum recusandae adipisci facere necessitatibus laboriosam
-                  ipsum modi optio aperiam suscipit maxime quibusdam soluta
-                  asperiores quidem dolores, explicabo, temporibus voluptatum
-                  sapiente ducimus.
-                </p>
-              </motion.div>
-              <motion.div exit={{ opacity: 0 }} className=" basis-3/5">
-                <h3 className="text-[8rem] font-bold mb-[-5rem]">
+              <motion.div exit={{ opacity: 0 }} className="">
+                <h3 className="sm:text-[8rem] font-bold sm:mb-[-5rem] text-[4rem] mb-[-2.5rem]">
                   <span className="text-[#06a5f6] ">Eat</span>
                 </h3>
-                <h3 className="text-[8rem] font-bold">Right</h3>
-                <p className="w-2/3">
+                <h3 className="sm:text-[8rem] font-bold text-[4rem]">Right</h3>
+                <p className="sm:w-2/3">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Nostrum reprehenderit non veritatis et quas, quasi minus id
                   dolore cumque assumenda soluta minima dolor libero inventore
