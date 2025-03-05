@@ -64,6 +64,9 @@ const Dropdown = (props) => {
                       id={e.id}
                       set={props.set}
                       setImage={props.setImage}
+                      setMeal={props.setMeal}
+                      mealData={props.mealData}
+                      d={props.d}
                     />
                   );
                 })}

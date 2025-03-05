@@ -10,7 +10,7 @@ import salade from "../public/imgs/salade.png";
 import milk from "../public/imgs/4.png";
 import Dropdown from "@/components/Dropdown";
 
-const BreakFast = () => {
+const BreakFast = (props) => {
   const [imageMeat, setImageMeat] = useState("");
   const [imageMilk, setImageMilk] = useState("");
   const [imageStarch, setImageStarch] = useState("");
@@ -68,10 +68,20 @@ const BreakFast = () => {
       Math.round(0.22 * FruitServes),
       Math.round(0.3 * MeatServes),
     ]);
-    setMeat(`${Math.round(0.3 * MeatServes)} Eggs`);
-    setMilk1(`${Math.round(0.5 * milkServes) * 240} ML of Milk`);
-    setFruit(`${Math.round(0.22 * FruitServes) * 1} Banana`);
-    setStarch(`${Math.round(0.4 * StarchServes) * 0.25} Cup of oat`);
+    console.log(props.mealData);
+    
+    props.mealData.meat.name === ""
+      ? setMeat(`${Math.round(0.3 * MeatServes)} Eggs`)
+      : setMeat(props.mealData.meat.name);
+    props.mealData.milk.name === ""
+      ? setMilk1(`${Math.round(0.5 * milkServes) * 240} ML of Milk`)
+      : setMilk1(props.mealData.milk.name);
+    props.mealData.fruits.name === ""
+      ? setFruit(`${Math.round(0.22 * FruitServes) * 1} Banana`)
+      : setFruit(props.mealData.fruits.name);
+    props.mealData.starch.name === ""
+      ? setStarch(`${Math.round(0.4 * StarchServes) * 0.25} Cup of oat`)
+      : setStarch(props.mealData.starch.name);
   }, []);
   return (
     <>
@@ -94,6 +104,8 @@ const BreakFast = () => {
             index={0}
             set={setMilk1}
             setImage={setImageMilk}
+            setMeal={props.setMeal}
+            mealData={props.mealData}
           />
           <Dropdown
             title={starch}
@@ -103,6 +115,8 @@ const BreakFast = () => {
             index={1}
             set={setStarch}
             setImage={setImageStarch}
+            setMeal={props.setMeal}
+            mealData={props.mealData}
           />
         </div>
         <div className="flex flex-row">
@@ -114,6 +128,8 @@ const BreakFast = () => {
             index={3}
             set={setMeat}
             setImage={setImageMeat}
+            setMeal={props.setMeal}
+            mealData={props.mealData}
           />
           <Dropdown
             title={fruit}
@@ -123,6 +139,8 @@ const BreakFast = () => {
             index={2}
             set={setFruit}
             setImage={setImageFruit}
+            setMeal={props.setMeal}
+            mealData={props.mealData}
           />
         </div>
       </motion.div>
@@ -136,7 +154,7 @@ const BreakFast = () => {
         </motion.div>
         <motion.div className="flex flex-col flex-wrap">
           <motion.div className="flex flex-row flex-wrap  justify-center">
-            {(imageMeat == "")||(imageMeat == "3.png") ? (
+            {props.mealData.meat.img == "" || props.mealData.meat.img == "3.png" ? (
               <>
                 <Image src={egg} width={120} height={150} alt="Egg" />
                 <Image src={egg} width={120} height={150} alt="Egg" />
@@ -144,19 +162,24 @@ const BreakFast = () => {
               </>
             ) : (
               <>
-                <Image src={`/imgs/${imageMeat}`} width={250} height={250} alt="Egg" />
+                <Image
+                  src={`/imgs/${props.mealData.meat.img}`}
+                  width={250}
+                  height={250}
+                  alt="Egg"
+                />
               </>
             )}
           </motion.div>
           <motion.div className="flex flex-row  justify-center">
             <Image
-              src={imageStarch == "" ? oat : `/imgs/${imageStarch}`}
+              src={props.mealData.starch.img == "" ? oat : `/imgs/${props.mealData.starch.img}`}
               width={250}
               height={250}
               alt="Oat"
             />
             <Image
-              src={imageFruit == "" ? salade : `/imgs/${imageFruit}`}
+              src={props.mealData.fruits.img == "" ? salade : `/imgs/${props.mealData.fruits.img}`}
               width={250}
               height={250}
               alt="Salade"

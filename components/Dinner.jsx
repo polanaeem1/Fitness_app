@@ -4,13 +4,13 @@ import { useParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
-import egg from "../public/imgs/3.png";
-import oat from "../public/imgs/1.png";
+import egg from "../public/imgs/35.png";
+import oat from "../public/imgs/29.png";
 import salade from "../public/imgs/salade.png";
-import milk from "../public/imgs/4.png";
+import milk from "../public/imgs/21.png";
 import Dropdown from "@/components/Dropdown";
 
-const Dinner = () => {
+const Dinner = (props) => {
   const [imageMeat, setImageMeat] = useState("");
   const [imageMilk, setImageMilk] = useState("");
   const [imageStarch, setImageStarch] = useState("");
@@ -68,10 +68,21 @@ const Dinner = () => {
       Math.round(0.4 * VegServes),
       Math.round(0.2 * MeatServes),
     ]);
-    setMeat(`${Math.round(0.2 * MeatServes)} Eggs`);
-    setMilk1(`${Math.round(0.5 * milkServes) * 240} ML of Milk`);
-    setVeg(`${Math.round(0.4 * VegServes) * 1} CUP of Raw vegetables`);
-    setStarch(`${Math.round(0.2 * StarchServes) * 0.25} Cup of oat`);
+    props.mealData.meat.name === ""
+      ? setMeat(`${Math.round(0.2 * MeatServes) * 30} G of Cottage Cheese`)
+      : setMeat(props.mealData.meat.name);
+
+    props.mealData.milk.name === ""
+      ? setMilk1(`${Math.round(0.5 * milkServes) * 180} G of Yogurt`)
+      : setMilk1(props.mealData.milk.name);
+
+    props.mealData.vegetable.name === ""
+      ? setVeg(`${Math.round(0.4 * VegServes) * 1} CUP of Raw vegetables`)
+      : setVeg(props.mealData.vegetable.name);
+
+    props.mealData.starch.name === ""
+      ?     setStarch(`${Math.round(0.2 * StarchServes) * 90} G of Potato`)
+      : setStarch(props.mealData.starch.name);
   }, []);
   return (
     <>
@@ -81,9 +92,7 @@ const Dinner = () => {
         animate={{ opacity: !visibale ? 1 : 0 }}
         className=" basis-3/6"
       >
-        <h3 className="text-[8rem] font-bold">
-          Dinner
-        </h3>
+        <h3 className="text-[8rem] font-bold">Dinner</h3>
         <div className="flex flex-row mt-4">
           <Dropdown
             title={milk1}
@@ -93,6 +102,8 @@ const Dinner = () => {
             index={0}
             set={setMilk1}
             setImage={setImageMilk}
+            setMeal={props.setMeal}
+            mealData={props.mealData}
           />
           <Dropdown
             title={starch}
@@ -102,6 +113,8 @@ const Dinner = () => {
             index={1}
             set={setStarch}
             setImage={setImageStarch}
+            setMeal={props.setMeal}
+            mealData={props.mealData}
           />
         </div>
         <div className="flex flex-row">
@@ -113,6 +126,8 @@ const Dinner = () => {
             index={3}
             set={setMeat}
             setImage={setImageMeat}
+            setMeal={props.setMeal}
+            mealData={props.mealData}
           />
           <Dropdown
             title={Veg}
@@ -122,6 +137,8 @@ const Dinner = () => {
             index={2}
             set={setVeg}
             setImage={setImageVeg}
+            setMeal={props.setMeal}
+            mealData={props.mealData}
           />
         </div>
       </motion.div>
@@ -131,31 +148,39 @@ const Dinner = () => {
         animate={{ opacity: !visibale ? 1 : 0 }}
       >
         <motion.div className="flex items-center">
-          <Image src={imageMilk == "" ? milk : `/imgs/${imageMilk}`} width={339.25} height={600} alt="milk" />
+          <Image
+            src={props.mealData.milk.img == "" ? milk : `/imgs/${props.mealData.milk.img}`}
+            width={339.25}
+            height={600}
+            alt="milk"
+          />
         </motion.div>
         <motion.div className="flex flex-col flex-wrap">
           <motion.div className="flex flex-row flex-wrap  justify-center">
-            {(imageMeat == "")||(imageMeat == "3.png") ? (
+            {props.mealData.meat.img == "" || props.mealData.meat.img == "35.png" ? (
               <>
-                <Image src={egg} width={120} height={150} alt="Egg" />
-                <Image src={egg} width={120} height={150} alt="Egg" />
-                <Image src={egg} width={120} height={150} alt="Egg" />
+                <Image src={egg} width={250} height={250} alt="Egg" />
               </>
             ) : (
               <>
-                <Image src={`/imgs/${imageMeat}`} width={250} height={250} alt="Egg" />
+                <Image
+                  src={`/imgs/${props.mealData.meat.img}`}
+                  width={250}
+                  height={250}
+                  alt="Egg"
+                />
               </>
             )}
           </motion.div>
           <motion.div className="flex flex-row  justify-center">
             <Image
-              src={imageStarch == "" ? oat : `/imgs/${imageStarch}`}
+              src={props.mealData.starch.img == "" ? oat : `/imgs/${props.mealData.starch.img}`}
               width={250}
               height={250}
               alt="Oat"
             />
             <Image
-              src={imageVeg == "" ? salade : `/imgs/${imageVeg}`}
+              src={props.mealData.vegetable.img == "" ? salade : `/imgs/${props.mealData.vegetable.img}`}
               width={250}
               height={250}
               alt="Salade"

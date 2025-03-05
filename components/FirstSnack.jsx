@@ -7,7 +7,7 @@ import Image from "next/image";
 import fruitImageDefault from "../public/imgs/5.png";
 import Dropdown from "@/components/Dropdown";
 
-const FirstSnack = () => {
+const FirstSnack = (props) => {
   const [imageMeat, setImageMeat] = useState("");
   const [imageMilk, setImageMilk] = useState("");
   const [imageStarch, setImageStarch] = useState("");
@@ -26,7 +26,7 @@ const FirstSnack = () => {
   const [firstSnack, setFirstSnack] = useState([]);
   const [visibale, setVisibale] = useState(false);
 
-  const [fruit, setFruit] = useState("banana");
+  const [fruit, setFruit] = useState("");
   const [shouldRender, setShouldRender] = useState(true);
   const [shouldRender2, setShouldRender2] = useState(true);
 
@@ -57,10 +57,10 @@ const FirstSnack = () => {
     calCHO();
     calProtin();
     calFat();
-    setFirstSnack([
-      Math.round(0.44 * FruitServes),
-    ]);
-    setFruit(`${Math.round(0.44 * FruitServes)*1} Banans`)
+    props.mealData.fruits.name === ""
+      ? setFruit(`${Math.round(0.44 * FruitServes)*1} Bananas`)
+      : setFruit(props.mealData.fruits.name);
+
   }, []);
   return (
     <>
@@ -84,6 +84,8 @@ const FirstSnack = () => {
             index={0}
             set={setFruit}
             setImage={setImageFruit}
+            setMeal={props.setMeal}
+            mealData={props.mealData}
           />
         </div>
       </motion.div>
@@ -93,7 +95,7 @@ const FirstSnack = () => {
         animate={{ opacity: !visibale ? 1 : 0 }}
       >
         <Image
-          src={imageFruit == "" ? fruitImageDefault : `/imgs/${imageFruit}`}
+          src={props.mealData.fruits.img == "" ? fruitImageDefault : `/imgs/${props.mealData.fruits.img}`}
           width={350}
           height={350}
           alt="Salade"

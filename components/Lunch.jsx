@@ -10,7 +10,7 @@ import rice from "../public/imgs/13.png";
 import vegetable from "../public/imgs/31.png";
 import Dropdown from "@/components/Dropdown";
 
-const Lunch = () => {
+const Lunch = (props) => {
   const [imageMeat, setImageMeat] = useState("");
   const [imageFat, setImageFat] = useState("");
   const [imageStarch, setImageStarch] = useState("");
@@ -68,16 +68,29 @@ const Lunch = () => {
       Math.round(0.2 * VegServes),
       Math.round(0.4 * MeatServes),
     ]);
-    setMeat(
-      `${(Math.round(0.4 * MeatServes) * 30).toFixed(2)} G of Chicken breast`
-    );
-    setFat(`${(Math.round(0.5 * FatServes) * 6).toFixed(2)} Almonds`);
-    setStarch(
-      `${(Math.round(0.4 * StarchServes) * (1 / 3)).toFixed(
-        2
-      )} CUP of Rice Cooked`
-    );
-    setVeg(`${Math.round(0.2 * VegServes).toFixed(2)} CUP of Raw vegetables`);
+    props.mealData.meat.name === ""
+      ? setMeat(
+          `${(Math.round(0.4 * MeatServes) * 30).toFixed(
+            2
+          )} G of Chicken breast`
+        )
+      : setMeat(props.mealData.meat.name);
+    props.mealData.fat.name === ""
+      ? setFat(`${(Math.round(0.5 * FatServes) * 6).toFixed(2)} Almonds`)
+      : setFat(props.mealData.fat.name);
+
+    props.mealData.starch.name === ""
+      ? setStarch(
+          `${(Math.round(0.4 * StarchServes) * (1 / 3)).toFixed(
+            2
+          )} CUP of Rice Cooked`
+        )
+      : setStarch(props.mealData.starch.name);
+    props.mealData.vegetable.name === ""
+      ? setVeg(
+          `${Math.round(0.2 * VegServes).toFixed(2)} CUP of Raw vegetables`
+        )
+      : setVeg(props.mealData.vegetable.name);
   }, []);
   return (
     <>
@@ -99,6 +112,8 @@ const Lunch = () => {
             index={0}
             set={setFat}
             setImage={setImageFat}
+            setMeal={props.setMeal}
+            mealData={props.mealData}
           />
           <Dropdown
             title={starch}
@@ -108,6 +123,8 @@ const Lunch = () => {
             index={1}
             set={setStarch}
             setImage={setImageStarch}
+            setMeal={props.setMeal}
+            mealData={props.mealData}
           />
         </div>
         <div className="flex flex-row">
@@ -119,6 +136,8 @@ const Lunch = () => {
             index={3}
             set={setMeat}
             setImage={setImageMeat}
+            setMeal={props.setMeal}
+            mealData={props.mealData}
           />
           <Dropdown
             title={veg}
@@ -128,6 +147,8 @@ const Lunch = () => {
             index={2}
             set={setVeg}
             setImage={setImageVeg}
+            setMeal={props.setMeal}
+            mealData={props.mealData}
           />
         </div>
       </motion.div>
@@ -138,18 +159,28 @@ const Lunch = () => {
       >
         <motion.div className="flex flex-col flex-wrap ml-24">
           <motion.div className="flex flex-row flex-wrap  justify-center">
-            <Image src={imageMeat == "" ? chb : `/imgs/${imageMeat}`} width={250} height={250} alt="chb" />
-            <Image src={imageFat == "" ? alm : `/imgs/${imageFat}`} width={250} height={250} alt="chb" />
+            <Image
+              src={props.mealData.meat.img == "" ? chb : `/imgs/${props.mealData.meat.img}`}
+              width={250}
+              height={250}
+              alt="chb"
+            />
+            <Image
+              src={props.mealData.fat.img == "" ? alm : `/imgs/${props.mealData.fat.img}`}
+              width={250}
+              height={250}
+              alt="chb"
+            />
           </motion.div>
           <motion.div className="flex flex-row justify-center">
             <Image
-              src={imageStarch == "" ? rice : `/imgs/${imageStarch}`}
+              src={props.mealData.starch.img == "" ? rice : `/imgs/${props.mealData.starch.img}`}
               width={250}
               height={250}
               alt="Oat"
             />
             <Image
-              src={imageVeg == "" ? vegetable : `/imgs/${imageVeg}`}
+              src={props.mealData.vegetable.img == "" ? vegetable : `/imgs/${props.mealData.vegetable.img }`}
               width={250}
               height={250}
               alt="Salade"

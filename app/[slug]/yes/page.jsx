@@ -77,7 +77,7 @@ const page = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2 }}
-          className="flex flex-col items-center gap-40 w-full h-screen"
+          className="flex flex-col items-center gap-40 w-full h-screen "
         >
           <h3 className="text-white text-[4rem] font-bold mt-14">
             Please fill this inputs
@@ -97,7 +97,7 @@ const page = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 2.5 }}
-              className="flex flex-row items-center justify-around w-full"
+              className="flex xl:flex-row xl:items-center xl:justify-around w-full lg:flex-wrap lg:items-center lg:justify-center lg:gap-5"
             >
               <motion.div
                 initial={{ opacity: 0 }}
@@ -176,9 +176,9 @@ const page = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 2.9 }}
-                className="flex flex-col items-center"
+                className="flex flex-col items-center lg:ml-5 xl:ml-0"
               >
-                <label className="block text-2xl font-semibold text-white mb-4">
+                <label className="block text-2xl font-semibold text-white mb-4 ">
                   Age
                 </label>
                 <Incrementer setValue={setAValue} />

@@ -9,10 +9,10 @@ import rice from "../public/imgs/13.png";
 import vegetable from "../public/imgs/31.png";
 import Dropdown from "@/components/Dropdown";
 import alm from "../public/imgs/6.png";
-import fruitImageDefault from "../public/imgs/5.png";
+import fruitImageDefault from "../public/imgs/22.png";
 import egg from "../public/imgs/3.png";
 
-const SecondSnack = () => {
+const SecondSnack = (props) => {
   const [imageMeat, setImageMeat] = useState("");
   const [imageFat, setImageFat] = useState("");
   const [imageFruit, setImageFruit] = useState("");
@@ -70,10 +70,34 @@ const SecondSnack = () => {
       Math.round(0.4 * VegServes),
       Math.round(0.1 * MeatServes),
     ]);
-    setFruit(`${Math.round(0.33 * FruitServes).toFixed(2)} Bananas`)
-    setFat(`${Math.round(0.33 * FatServes).toFixed(2)} Almonds`)
-    setMeat(`${Math.round(0.1 * MeatServes).toFixed(2)} Egg`)
-    setVeg(`${(Math.round(0.4 * VegServes)*0.5).toFixed(2)} CUP of Cooked vegetables`)
+    console.log(0.33 * FruitServes * 0.5);
+    props.mealData.fruits.name === ""
+      ? setFruit(
+          `${(Math.round(0.33 * FruitServes) * 0.5).toFixed(
+            2
+          )} CUP of  Strawberries`
+        )
+      : setFruit(props.mealData.fruits.name);
+
+    props.mealData.fat.name === ""
+      ? setFat(`${Math.round(0.33 * FatServes).toFixed(2)} Almonds`)
+      : setFat(props.mealData.fat.name);
+
+    props.mealData.meat.name === ""
+      ? setMeat(
+          `${(Math.round(0.1 * MeatServes) * 30).toFixed(
+            2
+          )} G of Chicken breast`
+        )
+      : setMeat(props.mealData.meat.name);
+
+    props.mealData.vegetable.name === ""
+      ? setVeg(
+          `${(Math.round(0.4 * VegServes) * 0.5).toFixed(
+            2
+          )} CUP of Cooked vegetables`
+        )
+      : setVeg(props.mealData.vegetable.name);
   }, []);
   return (
     <>
@@ -96,6 +120,8 @@ const SecondSnack = () => {
             index={0}
             set={setFat}
             setImage={setImageFat}
+            setMeal={props.setMeal}
+            mealData={props.mealData}
           />
           <Dropdown
             title={fruit}
@@ -105,6 +131,8 @@ const SecondSnack = () => {
             index={1}
             set={setFruit}
             setImage={setImageFruit}
+            setMeal={props.setMeal}
+            mealData={props.mealData}
           />
         </div>
         <div className="flex flex-row">
@@ -116,6 +144,8 @@ const SecondSnack = () => {
             index={3}
             set={setMeat}
             setImage={setImageMeat}
+            setMeal={props.setMeal}
+            mealData={props.mealData}
           />
           <Dropdown
             title={veg}
@@ -125,6 +155,8 @@ const SecondSnack = () => {
             index={2}
             set={setVeg}
             setImage={setImageVeg}
+            setMeal={props.setMeal}
+            mealData={props.mealData}
           />
         </div>
       </motion.div>
@@ -135,18 +167,28 @@ const SecondSnack = () => {
       >
         <motion.div className="flex flex-col flex-wrap ml-24">
           <motion.div className="flex flex-row flex-wrap  justify-center">
-            <Image src={imageMeat == "" ? egg : `/imgs/${imageMeat}`} width={200} height={200} alt="chb" />
-            <Image src={imageFat == "" ? alm : `/imgs/${imageFat}`} width={200} height={200} alt="chb" />
+            <Image
+              src={props.mealData.meat.img == "" ? chb : `/imgs/${props.mealData.meat.img}`}
+              width={200}
+              height={200}
+              alt="chb"
+            />
+            <Image
+              src={props.mealData.fat.img == "" ? alm : `/imgs/${props.mealData.fat.img}`}
+              width={200}
+              height={200}
+              alt="chb"
+            />
           </motion.div>
           <motion.div className="flex flex-row justify-center">
             <Image
-              src={imageFruit == "" ? fruitImageDefault : `/imgs/${imageFruit}`}
+              src={props.mealData.fruits.img == "" ? fruitImageDefault : `/imgs/${props.mealData.fruits.img}`}
               width={220}
               height={220}
               alt="Oat"
             />
             <Image
-              src={imageVeg == "" ? vegetable : `/imgs/${imageVeg}`}
+              src={props.mealData.vegetable.img == "" ? vegetable : `/imgs/${props.mealData.vegetable.img}`}
               width={220}
               height={220}
               alt="Salade"

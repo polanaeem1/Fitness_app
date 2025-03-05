@@ -36,39 +36,39 @@ const page = () => {
   const [shouldRender, setShouldRender] = useState(true);
   const [shouldRender2, setShouldRender2] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
-  // const [BreakFastData, setBreakFastData] = useState({
-  //   milk: "",
-  //   Starch: "",
-  //   Fruit: "",
-  //   Meat: "",
-  // });
-  // const [Snack1tData, setSnack1tData] = useState({
-  //   Fruit: "",
-  // });
-  // const [LunchData, setLunchData] = useState({
-  //   Veg: "",
-  //   Starch: "",
-  //   Fat: "",
-  //   Meat: "",
-  // });
-  // const [Snack2tData, setSnack2tData] = useState({
-  //   Veg: "",
-  //   Fruit: "",
-  //   Fat: "",
-  //   Meat: "",
-  // });
-  // const [DinnerData, setDinnerData] = useState({
-  //   Veg: "",
-  //   Starch: "",
-  //   milk: "",
-  //   Meat: "",
-  // });
+  const [BreakFastData, setBreakFastData] = useState({
+    milk: { img: "", name: "" },
+    starch: { img: "", name: "" },
+    fruits: { img: "", name: "" },
+    meat: { img: "", name: "" },
+  });
+  const [Snack1tData, setSnack1tData] = useState({
+    fruits: { img: "", name: "" },
+  });
+  const [LunchData, setLunchData] = useState({
+    vegetable: { img: "", name: "" },
+    starch: { img: "", name: "" },
+    fat: { img: "", name: "" },
+    meat: { img: "", name: "" },
+  });
+  const [Snack2tData, setSnack2tData] = useState({
+    vegetable: { img: "", name: "" },
+    fruits: { img: "", name: "" },
+    fat: { img: "", name: "" },
+    meat: { img: "", name: "" },
+  });
+  const [DinnerData, setDinnerData] = useState({
+    vegetable:{ img: "", name: "" },
+    starch:{ img: "", name: "" },
+    milk:{ img: "", name: "" },
+    meat:{ img: "", name: "" },
+  });
   const components = [
-    <BreakFast />,
-    <FirstSnack />,
-    <Lunch  />,
-    <SecondSnack  />,
-    <Dinner />,
+    <BreakFast mealData={BreakFastData} setMeal={setBreakFastData} />,
+    <FirstSnack mealData={Snack1tData} setMeal={setSnack1tData} />,
+    <Lunch mealData={LunchData} setMeal={setLunchData} />,
+    <SecondSnack mealData={Snack2tData} setMeal={setSnack2tData} />,
+    <Dinner mealData={DinnerData} setMeal={setDinnerData} />,
   ];
 
   const handleClick = () => {
@@ -132,11 +132,7 @@ const page = () => {
                   sapiente ducimus.
                 </p>
               </motion.div>
-              <motion.div
-
-                exit={{ opacity: 0 }}
-                className=" basis-3/5"
-              >
+              <motion.div exit={{ opacity: 0 }} className=" basis-3/5">
                 <h3 className="text-[8rem] font-bold mb-[-5rem]">
                   <span className="text-[#06a5f6] ">Eat</span>
                 </h3>

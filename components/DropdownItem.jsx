@@ -12,6 +12,18 @@ const DropdownItem = (props) => {
     props.set(props.title + " (" + props.amount + ")");
     props.setImage(props.id + ".png");
     props.setIsOpen(false);
+    console.log(props.d);
+    let s = props.d;
+    props.setMeal({
+      ...props.mealData,
+      [props.d]: {
+        name: `${(props.quantity * props.amount).toFixed(1)} ${
+          props.amountType == "piece" ? "" : props.amountType + " of "
+        } ${props.title}`,
+        img: props.id + ".png",
+      },
+    });
+    console.log(props);
   };
 
   return (

@@ -99,6 +99,14 @@ const data = {
         amountType: "G",
         selected: false,
       },
+      {
+        id: 35,
+        title: "Cottage Cheese",
+        amount: "30 G",
+        amountInt: 30,
+        amountType: "G",
+        selected: false,
+      },
     ],
     milk: [
       {
@@ -390,6 +398,14 @@ const data = {
         selected: false,
       },
       {
+        id: 35,
+        title: "Cottage Cheese",
+        amount: "30 G",
+        amountInt: 30,
+        amountType: "G",
+        selected: false,
+      },
+      {
         id: 15,
         title: "Chicken breast",
         amount: "1 OZ (30 G)",
@@ -619,6 +635,14 @@ const data = {
         selected: false,
       },
       {
+        id: 35,
+        title: "Cottage Cheese",
+        amount: "30 G",
+        amountInt: 30,
+        amountType: "G",
+        selected: false,
+      },
+      {
         id: 15,
         title: "Chicken breast",
         amount: "1 OZ (30 G)",
@@ -837,6 +861,14 @@ const data = {
         amount: "1",
         amountInt: 1,
         amountType: "piece",
+        selected: false,
+      },
+      {
+        id: 35,
+        title: "Cottage Cheese",
+        amount: "30 G",
+        amountInt: 30,
+        amountType: "G",
         selected: false,
       },
       {
