@@ -184,7 +184,6 @@ const Dinner = (props) => {
               width={250}
               height={250}
               alt="Salade"
-              
             />
           </motion.div>
         </motion.div>
