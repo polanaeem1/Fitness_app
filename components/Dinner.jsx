@@ -81,7 +81,7 @@ const Dinner = (props) => {
       : setVeg(props.mealData.vegetable.name);
 
     props.mealData.starch.name === ""
-      ?     setStarch(`${Math.round(0.2 * StarchServes) * 90} G of Potato`)
+      ? setStarch(`${Math.round(0.2 * StarchServes) * 90} G of Potato`)
       : setStarch(props.mealData.starch.name);
   }, []);
   return (
@@ -90,10 +90,12 @@ const Dinner = (props) => {
         initial={{ opacity: 0 }}
         viewport={{ amount: "all" }}
         animate={{ opacity: !visibale ? 1 : 0 }}
-        className=" basis-3/6"
+        className="md:basis-3/6"
       >
-        <h3 className="xl:text-[8rem] font-bold text-[6rem]">Dinner</h3>
-        <div className="flex flex-row mt-4">
+        <h3 className="xl:text-[8rem] font-bold lg:text-[6rem] md:text-[4rem] text-[3rem]">
+          Dinner
+        </h3>
+        <div className="flex lg:flex-row mt-4 flex-col">
           <Dropdown
             title={milk1}
             breakFast={breakFast}
@@ -117,7 +119,7 @@ const Dinner = (props) => {
             mealData={props.mealData}
           />
         </div>
-        <div className="flex flex-row">
+        <div className="flex lg:flex-row flex-col">
           <Dropdown
             title={meat}
             breakFast={breakFast}
@@ -143,23 +145,35 @@ const Dinner = (props) => {
         </div>
       </motion.div>
       <motion.div
-        className="basis-3/6 flex flex-row"
+        className="md:basis-3/6 md:flex md:flex-row  hidden"
         initial={{ opacity: 0 }}
         animate={{ opacity: !visibale ? 1 : 0 }}
       >
         <motion.div className="flex items-center">
           <Image
-            src={props.mealData.milk.img == "" ? milk : `/imgs/${props.mealData.milk.img}`}
+            src={
+              props.mealData.milk.img == ""
+                ? milk
+                : `/imgs/${props.mealData.milk.img}`
+            }
             width={339.25}
             height={600}
             alt="milk"
+            className=" xl:w-[15rem] xl:h-[15rem] lg:w-[10rem] lg:h-[10rem]  md:w-[9rem] md:h-[9rem]"
           />
         </motion.div>
         <motion.div className="flex flex-col flex-wrap">
           <motion.div className="flex flex-row flex-wrap  justify-center">
-            {props.mealData.meat.img == "" || props.mealData.meat.img == "35.png" ? (
+            {props.mealData.meat.img == "" ||
+            props.mealData.meat.img == "35.png" ? (
               <>
-                <Image src={egg} width={250} height={250} alt="Egg" />
+                <Image
+                  src={egg}
+                  width={250}
+                  height={250}
+                  alt="Egg"
+                  className=" xl:w-[15rem] xl:h-[15rem] lg:w-[10rem] lg:h-[10rem]  md:w-[9rem] md:h-[9rem]"
+                  />
               </>
             ) : (
               <>
@@ -168,22 +182,33 @@ const Dinner = (props) => {
                   width={250}
                   height={250}
                   alt="Egg"
-                />
+                  className=" xl:w-[15rem] xl:h-[15rem] lg:w-[10rem] lg:h-[10rem]  md:w-[9rem] md:h-[9rem]"
+                  />
               </>
             )}
           </motion.div>
           <motion.div className="flex flex-row  justify-center">
             <Image
-              src={props.mealData.starch.img == "" ? oat : `/imgs/${props.mealData.starch.img}`}
+              src={
+                props.mealData.starch.img == ""
+                  ? oat
+                  : `/imgs/${props.mealData.starch.img}`
+              }
               width={250}
               height={250}
               alt="Oat"
+              className=" xl:w-[15rem] xl:h-[15rem] lg:w-[10rem] lg:h-[10rem]  md:w-[9rem] md:h-[9rem]"
             />
             <Image
-              src={props.mealData.vegetable.img == "" ? salade : `/imgs/${props.mealData.vegetable.img}`}
+              src={
+                props.mealData.vegetable.img == ""
+                  ? salade
+                  : `/imgs/${props.mealData.vegetable.img}`
+              }
               width={250}
               height={250}
               alt="Salade"
+              className=" xl:w-[15rem] xl:h-[15rem] lg:w-[10rem] lg:h-[10rem]  md:w-[9rem] md:h-[9rem]"
             />
           </motion.div>
         </motion.div>

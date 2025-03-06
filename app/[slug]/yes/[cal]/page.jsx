@@ -119,7 +119,7 @@ const page = () => {
 
   return (
     <>
-      <div className="flex flex-row text-white gap-20 p-16 h-screen items-center">
+      <div className="flex flex-row text-white gap-20 md:p-16 h-screen items-center p-12">
         <AnimatePresence>
           {visibale && (
             <>
@@ -148,7 +148,7 @@ const page = () => {
           ) : (
             <>
               <div className="flex flex-col items-center justify-around h-screen w-full">
-                <div className="flex flex-row text-white  w-full items-center">
+                <div className="flex flex-row text-white  md:w-full items-center w-64">
                   {components[currentIndex]}
                 </div>
                 <div className=" absolute bottom-10">

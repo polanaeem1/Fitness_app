@@ -105,13 +105,13 @@ const SecondSnack = (props) => {
         initial={{ opacity: 0 }}
         viewport={{ amount: "all" }}
         animate={{ opacity: !visibale ? 1 : 0 }}
-        className=" basis-3/6"
+        className="md:basis-3/6"
       >
-        <h3 className="xl:text-[8rem] font-bold text-[6rem]">
+        <h3 className="xl:text-[8rem] font-bold lg:text-[6rem] md:text-[4rem] text-[2.5rem]">
           <span className="text-[#06a5f6]">Second</span>
           Snack
         </h3>
-        <div className="flex flex-row mt-4">
+        <div className="flex lg:flex-row mt-4 flex-col">
           <Dropdown
             title={fat}
             breakFast={meal}
@@ -135,7 +135,7 @@ const SecondSnack = (props) => {
             mealData={props.mealData}
           />
         </div>
-        <div className="flex flex-row">
+        <div className="flex lg:flex-row flex-col">
           <Dropdown
             title={meat}
             breakFast={meal}
@@ -161,37 +161,57 @@ const SecondSnack = (props) => {
         </div>
       </motion.div>
       <motion.div
-        className="basis-3/6 flex flex-row"
+        className="md:basis-3/6 md:flex md:flex-row  hidden"
         initial={{ opacity: 0 }}
         animate={{ opacity: !visibale ? 1 : 0 }}
       >
         <motion.div className="flex flex-col flex-wrap ml-24">
           <motion.div className="flex flex-row flex-wrap  justify-center">
             <Image
-              src={props.mealData.meat.img == "" ? chb : `/imgs/${props.mealData.meat.img}`}
+              src={
+                props.mealData.meat.img == ""
+                  ? chb
+                  : `/imgs/${props.mealData.meat.img}`
+              }
               width={200}
               height={200}
               alt="chb"
+              className=" xl:w-[15rem] xl:h-[15rem] lg:w-[10rem] lg:h-[10rem]  md:w-[9rem] md:h-[9rem]"
             />
             <Image
-              src={props.mealData.fat.img == "" ? alm : `/imgs/${props.mealData.fat.img}`}
+              src={
+                props.mealData.fat.img == ""
+                  ? alm
+                  : `/imgs/${props.mealData.fat.img}`
+              }
               width={200}
               height={200}
               alt="chb"
+              className=" xl:w-[15rem] xl:h-[15rem] lg:w-[10rem] lg:h-[10rem]  md:w-[9rem] md:h-[9rem]"
             />
           </motion.div>
           <motion.div className="flex flex-row justify-center">
             <Image
-              src={props.mealData.fruits.img == "" ? fruitImageDefault : `/imgs/${props.mealData.fruits.img}`}
+              src={
+                props.mealData.fruits.img == ""
+                  ? fruitImageDefault
+                  : `/imgs/${props.mealData.fruits.img}`
+              }
               width={220}
               height={220}
               alt="Oat"
+              className=" xl:w-[15rem] xl:h-[15rem] lg:w-[10rem] lg:h-[10rem]  md:w-[9rem] md:h-[9rem]"
             />
             <Image
-              src={props.mealData.vegetable.img == "" ? vegetable : `/imgs/${props.mealData.vegetable.img}`}
+              src={
+                props.mealData.vegetable.img == ""
+                  ? vegetable
+                  : `/imgs/${props.mealData.vegetable.img}`
+              }
               width={220}
               height={220}
               alt="Salade"
+              className=" xl:w-[15rem] xl:h-[15rem] lg:w-[10rem] lg:h-[10rem]  md:w-[9rem] md:h-[9rem]"
             />
           </motion.div>
         </motion.div>

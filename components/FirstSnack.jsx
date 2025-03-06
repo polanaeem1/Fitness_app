@@ -68,9 +68,9 @@ const FirstSnack = (props) => {
         initial={{ opacity: 0 }}
         viewport={{ amount: "all" }}
         animate={{ opacity: !visibale ? 1 : 0 }}
-        className=" basis-3/6"
+        className=" md:basis-3/6"
       >
-        <h3 className="xl:text-[8rem] font-bold text-[6rem]">
+        <h3 className="xl:text-[8rem] font-bold lg:text-[6rem] md:text-[4rem] text-[3rem]">
           <span className="text-[#06a5f6]">First</span>
           Snack
         </h3>
@@ -90,7 +90,8 @@ const FirstSnack = (props) => {
         </div>
       </motion.div>
       <motion.div
-        className="basis-3/6 flex flex-row justify-center items-center "
+        className="md:basis-3/6 md:flex md:flex-row  hidden justify-center items-center "
+
         initial={{ opacity: 0 }}
         animate={{ opacity: !visibale ? 1 : 0 }}
       >
@@ -103,8 +104,8 @@ const FirstSnack = (props) => {
           width={350}
           height={350}
           alt="Salade"
-          className=" lg:w-[20rem] lg:h-[20rem] xl:w-[25rem] xl:h-[25rem]"
-        />
+          className=" xl:w-[20rem] xl:h-[20rem] lg:w-[15rem] lg:h-[15rem]  md:w-[13rem] md:h-[13rem]"
+          />
       </motion.div>
     </>
   );

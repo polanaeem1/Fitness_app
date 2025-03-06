@@ -98,12 +98,12 @@ const Lunch = (props) => {
         initial={{ opacity: 0 }}
         viewport={{ amount: "all" }}
         animate={{ opacity: !visibale ? 1 : 0 }}
-        className=" basis-3/6"
+        className="md:basis-3/6"
       >
-        <h3 className="xl:text-[8rem] font-bold text-[6rem]">
+        <h3 className="xl:text-[8rem] font-bold lg:text-[6rem] md:text-[4rem] text-[3rem]">
           <span className="text-[#06a5f6]">Lunch</span>
         </h3>
-        <div className="flex flex-row mt-4">
+        <div className="flex lg:flex-row mt-4 flex-col">
           <Dropdown
             title={fat}
             breakFast={meal}
@@ -127,7 +127,7 @@ const Lunch = (props) => {
             mealData={props.mealData}
           />
         </div>
-        <div className="flex flex-row">
+        <div className="flex lg:flex-row flex-col">
           <Dropdown
             title={meat}
             breakFast={meal}
@@ -153,7 +153,7 @@ const Lunch = (props) => {
         </div>
       </motion.div>
       <motion.div
-        className="basis-3/6 flex flex-row"
+        className="md:basis-3/6 md:flex md:flex-row  hidden"
         initial={{ opacity: 0 }}
         animate={{ opacity: !visibale ? 1 : 0 }}
       >
@@ -164,12 +164,14 @@ const Lunch = (props) => {
               width={250}
               height={250}
               alt="chb"
+              className=" xl:w-[15rem] xl:h-[15rem] lg:w-[12rem] lg:h-[12rem]  md:w-[9rem] md:h-[9rem]"
             />
             <Image
               src={props.mealData.fat.img == "" ? alm : `/imgs/${props.mealData.fat.img}`}
               width={250}
               height={250}
               alt="chb"
+              className=" xl:w-[15rem] xl:h-[15rem] lg:w-[12rem] lg:h-[12rem]  md:w-[9rem] md:h-[9rem]"
             />
           </motion.div>
           <motion.div className="flex flex-row justify-center">
@@ -178,12 +180,14 @@ const Lunch = (props) => {
               width={250}
               height={250}
               alt="Oat"
+              className=" xl:w-[15rem] xl:h-[15rem] lg:w-[12rem] lg:h-[12rem]  md:w-[9rem] md:h-[9rem]"
             />
             <Image
               src={props.mealData.vegetable.img == "" ? vegetable : `/imgs/${props.mealData.vegetable.img }`}
               width={250}
               height={250}
               alt="Salade"
+              className=" xl:w-[15rem] xl:h-[15rem] lg:w-[12rem] lg:h-[12rem]  md:w-[9rem] md:h-[9rem]"
             />
           </motion.div>
         </motion.div>

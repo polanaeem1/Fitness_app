@@ -7,7 +7,7 @@ const Dropdown = (props) => {
   const [value, setValue] = useState("");
   return (
     <div
-      className="w-full md:w-1/2 flex flex-col items-center"
+      className="w-full flex flex-col items-center"
       onBlur={() => {
         setTimeout(() => {
           setIsOpen(!isOpen);
@@ -17,8 +17,7 @@ const Dropdown = (props) => {
       <div className="w-full pr-2">
         <div className="flex flex-col items-center relative">
           <div className="w-full">
-            <div className="my-2 p-3 bg-white flex border border-gray-200 rounded text-xl">
-              <div className="flex flex-auto flex-wrap"></div>
+            <div className="my-2 p-3 bg-white flex border border-gray-200 rounded md:text-xl text-sm">
               <input
                 placeholder={value === "" ? props.title : value}
                 className="p-1 px-2 appearance-none outline-none w-full  cursor-pointer placeholder:text-black"
