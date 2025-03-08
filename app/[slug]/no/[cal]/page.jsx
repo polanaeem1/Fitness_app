@@ -46,6 +46,8 @@ const page = () => {
     starch: { img: "", name: "" },
     fruits: { img: "", name: "" },
     meat: { img: "", name: "" },
+    vegetables: { img: "", name: "" },
+    fat: { img: "", name: "" },
   });
   const [Snack1tData, setSnack1tData] = useState({
     fruits: { img: "", name: "" },
@@ -63,10 +65,10 @@ const page = () => {
     meat: { img: "", name: "" },
   });
   const [DinnerData, setDinnerData] = useState({
-    vegetable:{ img: "", name: "" },
-    starch:{ img: "", name: "" },
-    milk:{ img: "", name: "" },
-    meat:{ img: "", name: "" },
+    vegetable: { img: "", name: "" },
+    starch: { img: "", name: "" },
+    milk: { img: "", name: "" },
+    meat: { img: "", name: "" },
   });
   const components = [
     <BreakFastS mealData={BreakFastData} setMeal={setBreakFastData} />,
@@ -156,7 +158,7 @@ const page = () => {
                 <div className="flex flex-row text-white  md:w-full items-center w-64">
                   {components[currentIndex]}
                 </div>
-                <div className=" absolute bottom-10">
+                <div className=" absolute bottom-5">
                   <button
                     type="button"
                     className="bg-gray-800 text-white rounded-l-md border-r border-gray-100 py-2 hover:bg-red-700 hover:text-white px-3"

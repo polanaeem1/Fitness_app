@@ -1,4 +1,4 @@
-const data = {
+ const  data = {
   breakfast: {
     starch: [
       {
@@ -122,7 +122,7 @@ const data = {
         selected: false,
       },
     ],
-    fruit: [
+    fruits: [
       {
         id: 16,
         title: "Apple",
@@ -212,7 +212,7 @@ const data = {
         selected: false,
       },
     ],
-    dairy: [
+    milk: [
       {
         id: 27,
         title: "Milk",
@@ -520,7 +520,7 @@ const data = {
         selected: false,
       },
     ],
-    fruit: [
+    fruits: [
       {
         id: 16,
         title: "Apple",
@@ -610,7 +610,7 @@ const data = {
         selected: false,
       },
     ],
-    dairy: [
+    milk: [
       {
         id: 27,
         title: "Milk",
@@ -918,7 +918,7 @@ const data = {
         selected: false,
       },
     ],
-    fruit: [
+    fruits: [
       {
         id: 16,
         title: "Apple",
@@ -1008,7 +1008,7 @@ const data = {
         selected: false,
       },
     ],
-    dairy: [
+    milk: [
       {
         id: 27,
         title: "Milk",
@@ -1316,7 +1316,7 @@ const data = {
         selected: false,
       },
     ],
-    fruit: [
+    fruits: [
       {
         id: 16,
         title: "Apple",
@@ -1406,7 +1406,7 @@ const data = {
         selected: false,
       },
     ],
-    dairy: [
+    milk: [
       {
         id: 27,
         title: "Milk",
@@ -1714,7 +1714,7 @@ const data = {
         selected: false,
       },
     ],
-    fruit: [
+    fruits: [
       {
         id: 16,
         title: "Apple",
@@ -1804,7 +1804,7 @@ const data = {
         selected: false,
       },
     ],
-    dairy: [
+    milk: [
       {
         id: 27,
         title: "Milk",
@@ -1990,3 +1990,4 @@ const data = {
     ],
   },
 };
+export default data;
