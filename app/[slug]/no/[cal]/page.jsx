@@ -50,25 +50,36 @@ const page = () => {
     fat: { img: "", name: "" },
   });
   const [Snack1tData, setSnack1tData] = useState({
+    milk: { img: "", name: "" },
+    starch: { img: "", name: "" },
     fruits: { img: "", name: "" },
+    meat: { img: "", name: "" },
+    vegetables: { img: "", name: "" },
+    fat: { img: "", name: "" },
   });
   const [LunchData, setLunchData] = useState({
-    vegetable: { img: "", name: "" },
+    milk: { img: "", name: "" },
     starch: { img: "", name: "" },
-    fat: { img: "", name: "" },
+    fruits: { img: "", name: "" },
     meat: { img: "", name: "" },
+    vegetables: { img: "", name: "" },
+    fat: { img: "", name: "" },
   });
   const [Snack2tData, setSnack2tData] = useState({
-    vegetable: { img: "", name: "" },
+    milk: { img: "", name: "" },
+    starch: { img: "", name: "" },
     fruits: { img: "", name: "" },
-    fat: { img: "", name: "" },
     meat: { img: "", name: "" },
+    vegetables: { img: "", name: "" },
+    fat: { img: "", name: "" },
   });
   const [DinnerData, setDinnerData] = useState({
-    vegetable: { img: "", name: "" },
-    starch: { img: "", name: "" },
     milk: { img: "", name: "" },
+    starch: { img: "", name: "" },
+    fruits: { img: "", name: "" },
     meat: { img: "", name: "" },
+    vegetables: { img: "", name: "" },
+    fat: { img: "", name: "" },
   });
   const components = [
     <BreakFastS mealData={BreakFastData} setMeal={setBreakFastData} />,
