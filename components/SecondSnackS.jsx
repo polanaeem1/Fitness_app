@@ -821,7 +821,7 @@ const SecondSnackS = (props) => {
         {breakFast[0] == 0 ? (
           ""
         ) : (
-          <motion.div className="flex items-center xl:w-fit lg:w-1/2">
+          <motion.div className="flex items-center xl:w-fit lg:w-1/2 md:w-52">
             <Image
               src={
                 props.mealData.milk.img == ""

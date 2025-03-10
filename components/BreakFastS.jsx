@@ -693,7 +693,7 @@ const BreakFastS = (props) => {
         {breakFast[4] == 0 ? (
           ""
         ) : (
-          <motion.div className="flex items-center xl:w-fit lg:w-1/2">
+          <motion.div className="flex items-center xl:w-fit lg:w-1/2 md:w-52">
             <Image
               src={
                 props.mealData.milk.img == ""
@@ -757,7 +757,7 @@ const BreakFastS = (props) => {
                 width={250}
                 height={250}
                 alt="Egg"
-                className="xl:w-fit lg:w-1/2"
+                className="xl:w-[12rem] xl:h-[12rem] lg:w-[6rem] lg:h-[6rem] md:w-[4rem] md:h-[4rem]"
               />
             )}
           </motion.div>
