@@ -45,6 +45,8 @@ const page = () => {
     return total;
   };
   const handleSubmit = () => {
+    console.log(wvalue, hvalue, avalue, pa);
+
     if (light) {
       pa = 1.4;
     } else if (moderate) {
@@ -59,13 +61,7 @@ const page = () => {
       pa,
       clickedm ? "male" : "female"
     );
-    if (
-      wvalue != "" &&
-      hvalue != "" &&
-      avalue != "" &&
-      pa != "" &&
-      clickedm != ""
-    ) {
+    if (wvalue != "" && hvalue != "" && avalue != "" && pa != "") {
       router.push(location + `/${cal}`);
     }
   };
@@ -89,7 +85,7 @@ const page = () => {
               opacity: 1,
             }}
             transition={{ duration: 2.4 }}
-            viewport={{ amount:"some" }}
+            viewport={{ amount: "some" }}
             className="flex flex-col items-center w-full mb-48"
           >
             <motion.div
