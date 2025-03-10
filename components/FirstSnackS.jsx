@@ -5,6 +5,13 @@ import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
 import fruitImageDefault from "../public/imgs/5.png";
+import egg from "../public/imgs/3.png";
+import oat from "../public/imgs/1.png";
+import vegs from "../public/imgss/47.png";
+import salade from "../public/imgss/33.png";
+import f from "../public/imgss/24.png";
+
+import milk from "../public/imgs/4.png";
 import Dropdown from "@/components/Dropdown";
 import DropdownS from "./DropdownS";
 
@@ -29,6 +36,11 @@ const FirstSnackS = (props) => {
   const [breakFast, setBreakFast] = useState([]);
 
   const [fruit, setFruit] = useState("");
+  const [meat, setMeat] = useState(`Eggs`);
+  const [milk1, setMilk1] = useState("milk ( 1 CUP (240 ML) )");
+  const [starch, setStarch] = useState("oats ( 1/4 CUP )");
+  const [fat, setFat] = useState("");
+  const [veg, setVeg] = useState("");
   const [shouldRender, setShouldRender] = useState(true);
   const [shouldRender2, setShouldRender2] = useState(true);
 
@@ -39,6 +51,12 @@ const FirstSnackS = (props) => {
     }, 500);
   };
 
+  // 0=> milk
+  // 1=>veg
+  // 2=>starch
+  // 3=> fruit
+  // 4=> meat
+  // 5=> fat
   useEffect(() => {
     if (cal < 1250) {
       setBreakFast([1, 0, 0, 1, 0, 1]);
@@ -670,18 +688,101 @@ const FirstSnackS = (props) => {
           Snack
         </h3>
 
-        <div className="flex flex-row mt-10">
-          <DropdownS
-            title={fruit}
-            breakFast={breakFast}
-            meal={"snack1"}
-            d="fruits"
-            index={0}
-            set={setFruit}
-            setImage={setImageFruit}
-            setMeal={props.setMeal}
-            mealData={props.mealData}
-          />
+        <div className="flex lg:flex-row mt-4 flex-col">
+          {breakFast[1] == 0 ? (
+            ""
+          ) : (
+            <DropdownS
+              title={veg}
+              breakFast={breakFast}
+              meal={"breakfast"}
+              d="vegetables"
+              index={1}
+              set={setVeg}
+              setImage={setImageMilk}
+              setMeal={props.setMeal}
+              mealData={props.mealData}
+            />
+          )}
+          {breakFast[2] == 0 ? (
+            ""
+          ) : (
+            <DropdownS
+              title={starch}
+              breakFast={breakFast}
+              meal={"breakfast"}
+              d="starch"
+              index={2}
+              set={setStarch}
+              setImage={setImageStarch}
+              setMeal={props.setMeal}
+              mealData={props.mealData}
+            />
+          )}
+        </div>
+        <div className="flex lg:flex-row flex-col">
+          {breakFast[4] == 0 ? (
+            ""
+          ) : (
+            <DropdownS
+              title={meat}
+              breakFast={breakFast}
+              d="meat"
+              meal={"breakfast"}
+              index={4}
+              set={setMeat}
+              setImage={setImageMeat}
+              setMeal={props.setMeal}
+              mealData={props.mealData}
+            />
+          )}
+          {breakFast[5] == 0 ? (
+            ""
+          ) : (
+            <DropdownS
+              title={fat}
+              breakFast={breakFast}
+              d="fat"
+              meal={"breakfast"}
+              index={5}
+              set={setFat}
+              setImage={setImageFruit}
+              setMeal={props.setMeal}
+              mealData={props.mealData}
+            />
+          )}
+        </div>
+        <div className="flex lg:flex-row flex-col">
+          {breakFast[3] == 0 ? (
+            ""
+          ) : (
+            <DropdownS
+              title={fruit}
+              breakFast={breakFast}
+              d="fruits"
+              meal={"breakfast"}
+              index={3}
+              set={setFruit}
+              setImage={setImageMeat}
+              setMeal={props.setMeal}
+              mealData={props.mealData}
+            />
+          )}
+          {breakFast[0] == 0 ? (
+            ""
+          ) : (
+            <DropdownS
+              title={milk1}
+              breakFast={breakFast}
+              d="milk"
+              meal={"breakfast"}
+              index={0}
+              set={setMilk1}
+              setImage={setImageFruit}
+              setMeal={props.setMeal}
+              mealData={props.mealData}
+            />
+          )}
         </div>
       </motion.div>
       <motion.div
@@ -689,17 +790,113 @@ const FirstSnackS = (props) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: !visibale ? 1 : 0 }}
       >
-        <Image
-          src={
-            props.mealData.fruits.img == ""
-              ? fruitImageDefault
-              : `/imgs/${props.mealData.fruits.img}`
-          }
-          width={350}
-          height={350}
-          alt="Salade"
-          className=" xl:w-[20rem] xl:h-[20rem] lg:w-[15rem] lg:h-[15rem]  md:w-[13rem] md:h-[13rem]"
-        />
+        {breakFast[0] == 0 ? (
+          ""
+        ) : (
+          <motion.div className="flex items-center xl:w-fit lg:w-1/2">
+            <Image
+              src={
+                props.mealData.milk.img == ""
+                  ? milk
+                  : `/imgss/${props.mealData.milk.img}`
+              }
+              width={339.25}
+              height={600}
+              alt="milk"
+            />
+          </motion.div>
+        )}
+        <motion.div className="flex flex-col flex-wrap">
+          <motion.div className="flex flex-row flex-wrap  justify-center ">
+            {breakFast[4] == 0 ? (
+              ""
+            ) : props.mealData.meat.img == "" ||
+              props.mealData.meat.img == "3.png" ? (
+              <>
+                <Image
+                  src={egg}
+                  width={120}
+                  height={150}
+                  alt="Egg"
+                  className="xl:w-[12rem] xl:h-[12rem] lg:w-[6rem] lg:h-[6rem] md:w-[4rem] md:h-[4rem]"
+                />
+              </>
+            ) : (
+              <>
+                <Image
+                  src={`/imgss/${props.mealData.meat.img}`}
+                  width={250}
+                  height={250}
+                  alt="Egg"
+                  className="xl:w-[12rem] xl:h-[12rem] lg:w-[6rem] lg:h-[6rem] md:w-[4rem] md:h-[4rem]"
+                />
+              </>
+            )}
+            {breakFast[1] == 0 ? (
+              ""
+            ) : (
+              <Image
+                src={
+                  props.mealData.vegetables.img == ""
+                    ? vegs
+                    : `/imgss/${props.mealData.vegetables.img}`
+                }
+                width={250}
+                height={250}
+                alt="Egg"
+                className="xl:w-[12rem] xl:h-[12rem] lg:w-[6rem] lg:h-[6rem] md:w-[4rem] md:h-[4rem]"
+              />
+            )}
+            {breakFast[3] == 0 ? (
+              ""
+            ) : (
+              <Image
+                src={
+                  props.mealData.fruits.img == ""
+                    ? f
+                    : `/imgss/${props.mealData.fruits.img}`
+                }
+                width={250}
+                height={220}
+                alt="Egg"
+                className="xl:w-[12rem] xl:h-[12rem] lg:w-[6rem] lg:h-[6rem] md:w-[4rem] md:h-[4rem]"
+              />
+            )}
+          </motion.div>
+          <motion.div className="flex flex-row  justify-center ">
+            {breakFast[2] == 0 ? (
+              ""
+            ) : (
+              <Image
+                src={
+                  props.mealData.starch.img == ""
+                    ? oat
+                    : `/imgss/${props.mealData.starch.img}`
+                }
+                width={250}
+                height={250}
+                alt="Oat"
+                className="xl:w-[12rem] xl:h-[12rem] lg:w-[6rem] lg:h-[6rem] md:w-[4rem] md:h-[4rem]"
+              />
+            )}
+
+            {breakFast[5] == 0 ? (
+              ""
+            ) : (
+              <Image
+                src={
+                  props.mealData.fat.img == ""
+                    ? salade
+                    : `/imgss/${props.mealData.fat.img}`
+                }
+                width={250}
+                height={250}
+                alt="Salade"
+                className="xl:w-[12rem] xl:h-[12rem] lg:w-[6rem] lg:h-[6rem] md:w-[4rem] md:h-[4rem]"
+              />
+            )}
+          </motion.div>
+        </motion.div>
       </motion.div>
     </>
   );

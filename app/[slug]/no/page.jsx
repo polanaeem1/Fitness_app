@@ -86,13 +86,7 @@ const page = () => {
       pa,
       clickedm ? "male" : "female"
     );
-    if (
-      wvalue != "" &&
-      hvalue != "" &&
-      avalue != "" &&
-      pa != "" &&
-      clickedm != ""
-    ) {
+    if (wvalue != "" && hvalue != "" && avalue != "" && pa != "") {
       router.push(location + `/${cal}`);
     }
   };
