@@ -605,52 +605,68 @@ const BreakFastS = (props) => {
           fast
         </h3>
         <div className="flex lg:flex-row mt-4 flex-col">
-          <DropdownS
-            title={veg}
-            breakFast={breakFast}
-            meal={"breakfast"}
-            d="vegetables"
-            index={0}
-            set={setVeg}
-            setImage={setImageMilk}
-            setMeal={props.setMeal}
-            mealData={props.mealData}
-          />
-          <DropdownS
-            title={starch}
-            breakFast={breakFast}
-            meal={"breakfast"}
-            d="starch"
-            index={1}
-            set={setStarch}
-            setImage={setImageStarch}
-            setMeal={props.setMeal}
-            mealData={props.mealData}
-          />
+          {breakFast[0] == 0 ? (
+            ""
+          ) : (
+            <DropdownS
+              title={veg}
+              breakFast={breakFast}
+              meal={"breakfast"}
+              d="vegetables"
+              index={0}
+              set={setVeg}
+              setImage={setImageMilk}
+              setMeal={props.setMeal}
+              mealData={props.mealData}
+            />
+          )}
+          {breakFast[1] == 0 ? (
+            ""
+          ) : (
+            <DropdownS
+              title={starch}
+              breakFast={breakFast}
+              meal={"breakfast"}
+              d="starch"
+              index={1}
+              set={setStarch}
+              setImage={setImageStarch}
+              setMeal={props.setMeal}
+              mealData={props.mealData}
+            />
+          )}
         </div>
         <div className="flex lg:flex-row flex-col">
-          <DropdownS
-            title={meat}
-            breakFast={breakFast}
-            d="meat"
-            meal={"breakfast"}
-            index={3}
-            set={setMeat}
-            setImage={setImageMeat}
-            setMeal={props.setMeal}
-            mealData={props.mealData}
-          />
-          <DropdownS
-            title={fat}
-            breakFast={breakFast}
-            d="fat"
-            meal={"breakfast"}
-            index={2}
-            set={setFat}
-            setImage={setImageFruit}
-            setMeal={props.setMeal}
-            mealData={props.mealData}
-          />
+          {breakFast[3] == 0 ? (
+            ""
+          ) : (
+            <DropdownS
+              title={meat}
+              breakFast={breakFast}
+              d="meat"
+              meal={"breakfast"}
+              index={3}
+              set={setMeat}
+              setImage={setImageMeat}
+              setMeal={props.setMeal}
+              mealData={props.mealData}
+            />
+          )}
+          {breakFast[2] == 0 ? (
+            ""
+          ) : (
+            <DropdownS
+              title={fat}
+              breakFast={breakFast}
+              d="fat"
+              meal={"breakfast"}
+              index={2}
+              set={setFat}
+              setImage={setImageFruit}
+              setMeal={props.setMeal}
+              mealData={props.mealData}
+            />
+          )}
         </div>
         <div className="flex lg:flex-row flex-col">
           {breakFast[4] == 0 ? (
