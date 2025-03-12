@@ -156,7 +156,7 @@ const page = () => {
                   className="mt-10 px-9 py-2 bg-[#06a5f6] font-bold text-xl rounded-lg cursor-pointer hover:bg-[#1d76a2]"
                   onClick={handleClick}
                 >
-                  Show Me
+                  {parseFloat(cal).toFixed(2)} KCal
                 </button>
               </motion.div>
             </>

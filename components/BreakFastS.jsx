@@ -5,10 +5,10 @@ import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
 import egg from "../public/imgs/3.png";
-import oat from "../public/imgs/1.png";
+import oat from "../public/imgs/2.png";
 import vegs from "../public/imgss/47.png";
-import salade from "../public/imgss/33.png";
-import f from "../public/imgss/24.png";
+import salade from "../public/imgss/31.png";
+import f from "../public/imgss/16.png";
 
 import milk from "../public/imgs/4.png";
 import Dropdown from "@/components/Dropdown";
@@ -58,10 +58,10 @@ const BreakFastS = (props) => {
         ? setVeg(`${1 * 0.5} CUP of Raw Vegetables`)
         : setVeg(props.mealData.vegetables.name);
       props.mealData.fat.name === ""
-        ? setFat(`${1 * 6} Almonds`)
+        ? setFat(`${1 * 1} tsp of Olive Oil`)
         : setFat(props.mealData.fat.name);
       props.mealData.starch.name === ""
-        ? setStarch(`${2 * 0.25} Cup of oat  (uncooked) `)
+        ? setStarch(`${2 * 1} Whole grain toast `)
         : setStarch(props.mealData.starch.name);
     } else if (cal < 1350) {
       setBreakFast([2, 2, 1, 1, 0, 0]);
@@ -72,10 +72,10 @@ const BreakFastS = (props) => {
         ? setVeg(`${2 * 0.5} CUP of Raw Vegetables`)
         : setVeg(props.mealData.vegetables.name);
       props.mealData.fat.name === ""
-        ? setFat(`${1 * 6} Almonds`)
+        ? setFat(`${1 * 1} tsp of Olive Oil`)
         : setFat(props.mealData.fat.name);
       props.mealData.starch.name === ""
-        ? setStarch(`${2 * 0.25} Cup of oat  (uncooked)`)
+        ? setStarch(`${2 * 1} Whole grain toast`)
         : setStarch(props.mealData.starch.name);
     } else if (cal < 1450) {
       setBreakFast([2, 2, 1, 1, 0, 0]);
@@ -86,10 +86,10 @@ const BreakFastS = (props) => {
         ? setVeg(`${2 * 0.5} CUP of Raw Vegetables`)
         : setVeg(props.mealData.vegetables.name);
       props.mealData.fat.name === ""
-        ? setFat(`${1 * 6} Almonds`)
+        ? setFat(`${1 * 1} tsp of Olive Oil`)
         : setFat(props.mealData.fat.name);
       props.mealData.starch.name === ""
-        ? setStarch(`${2 * 0.25} Cup of oat  (uncooked)`)
+        ? setStarch(`${2 * 1} Whole grain toast`)
         : setStarch(props.mealData.starch.name);
     } else if (cal < 1550) {
       setBreakFast([2, 2, 2, 1, 0, 0]);
@@ -100,10 +100,10 @@ const BreakFastS = (props) => {
         ? setVeg(`${2 * 0.5} CUP of Raw Vegetables`)
         : setVeg(props.mealData.vegetables.name);
       props.mealData.fat.name === ""
-        ? setFat(`${2 * 6} Almonds`)
+        ? setFat(`${2 * 1} tsp of Olive Oil`)
         : setFat(props.mealData.fat.name);
       props.mealData.starch.name === ""
-        ? setStarch(`${2 * 0.25} Cup of oat  (uncooked)`)
+        ? setStarch(`${2 * 1} Whole grain toast`)
         : setStarch(props.mealData.starch.name);
     } else if (cal < 1650) {
       setBreakFast([2, 3, 2, 2, 0, 0]);
@@ -114,10 +114,10 @@ const BreakFastS = (props) => {
         ? setVeg(`${2 * 0.5} CUP of Raw Vegetables`)
         : setVeg(props.mealData.vegetables.name);
       props.mealData.fat.name === ""
-        ? setFat(`${2 * 6} Almonds`)
+        ? setFat(`${2 * 1} tsp of Olive Oil`)
         : setFat(props.mealData.fat.name);
       props.mealData.starch.name === ""
-        ? setStarch(`${3 * 0.25} Cup of oat  (uncooked)`)
+        ? setStarch(`${3 * 1} Whole grain toast`)
         : setStarch(props.mealData.starch.name);
     } else if (cal < 1750) {
       setBreakFast([2, 2, 2, 2, 0, 0]);
@@ -128,10 +128,10 @@ const BreakFastS = (props) => {
         ? setVeg(`${2 * 0.5} CUP of Raw Vegetables`)
         : setVeg(props.mealData.vegetables.name);
       props.mealData.fat.name === ""
-        ? setFat(`${2 * 6} Almonds`)
+        ? setFat(`${2 * 1} tsp of Olive Oil`)
         : setFat(props.mealData.fat.name);
       props.mealData.starch.name === ""
-        ? setStarch(`${2 * 0.25} Cup of oat  (uncooked)`)
+        ? setStarch(`${2 * 1} Whole grain toast`)
         : setStarch(props.mealData.starch.name);
     } else if (cal < 1850) {
       setBreakFast([2, 2, 2, 2, 0, 0]);
@@ -142,10 +142,10 @@ const BreakFastS = (props) => {
         ? setVeg(`${2 * 0.5} CUP of Raw Vegetables`)
         : setVeg(props.mealData.vegetables.name);
       props.mealData.fat.name === ""
-        ? setFat(`${2 * 6} Almonds`)
+        ? setFat(`${2 * 1} tsp of Olive Oil`)
         : setFat(props.mealData.fat.name);
       props.mealData.starch.name === ""
-        ? setStarch(`${2 * 0.25} Cup of oat  (uncooked)`)
+        ? setStarch(`${2 * 1} Whole grain toast`)
         : setStarch(props.mealData.starch.name);
     } else if (cal < 1950) {
       setBreakFast([
@@ -160,7 +160,7 @@ const BreakFastS = (props) => {
         ? setMilk1(`${1} CUP of Milk`)
         : setMilk1(props.mealData.milk.name);
       props.mealData.fruits.name === ""
-        ? setFruit(`${1 * 0.75} CUP of  Mango`)
+        ? setFruit(`${1 * 1} Apple`)
         : setFruit(props.mealData.fruits.name);
       props.mealData.meat.name === ""
         ? setMeat(`${1} Eggs`)
@@ -169,10 +169,10 @@ const BreakFastS = (props) => {
         ? setVeg(`${2 * 0.5} CUP of Raw Vegetables`)
         : setVeg(props.mealData.vegetables.name);
       props.mealData.fat.name === ""
-        ? setFat(`${2 * 6} Almonds`)
+        ? setFat(`${2 * 1} tsp of Olive Oil`)
         : setFat(props.mealData.fat.name);
       props.mealData.starch.name === ""
-        ? setStarch(`${2 * 0.25} Cup of oat  (uncooked)`)
+        ? setStarch(`${2 * 1} Whole grain toast`)
         : setStarch(props.mealData.starch.name);
     } else if (cal < 2050) {
       setBreakFast([2, 2, 2, 2, 1, 1]);
@@ -182,7 +182,7 @@ const BreakFastS = (props) => {
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${1 * 0.75} CUP of  Mango`)
+        ? setFruit(`${1 * 1} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
@@ -194,11 +194,11 @@ const BreakFastS = (props) => {
         : setVeg(props.mealData.vegetables.name);
 
       props.mealData.fat.name === ""
-        ? setFat(`${2 * 6} Almonds`)
+        ? setFat(`${2 * 1} tsp of Olive Oil`)
         : setFat(props.mealData.fat.name);
 
       props.mealData.starch.name === ""
-        ? setStarch(`${2 * 0.25} Cup of oat  (uncooked)`)
+        ? setStarch(`${2 * 1} Whole grain toast`)
         : setStarch(props.mealData.starch.name);
     } else if (cal < 2150) {
       setBreakFast([2, 2, 2, 2, 1, 1]);
@@ -208,7 +208,7 @@ const BreakFastS = (props) => {
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${1 * 0.75} CUP of  Mango`)
+        ? setFruit(`${1 * 1} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
@@ -220,11 +220,11 @@ const BreakFastS = (props) => {
         : setVeg(props.mealData.vegetables.name);
 
       props.mealData.fat.name === ""
-        ? setFat(`${2 * 6} Almonds`)
+        ? setFat(`${2 * 1} tsp of Olive Oil`)
         : setFat(props.mealData.fat.name);
 
       props.mealData.starch.name === ""
-        ? setStarch(`${2 * 0.25} Cup of oat  (uncooked)`)
+        ? setStarch(`${2 * 1} Whole grain toast`)
         : setStarch(props.mealData.starch.name);
     } else if (cal < 2250) {
       setBreakFast([2, 2, 2, 2, 1, 1]);
@@ -234,7 +234,7 @@ const BreakFastS = (props) => {
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${1 * 0.75} CUP of  Mango`)
+        ? setFruit(`${1 * 1} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
@@ -246,11 +246,11 @@ const BreakFastS = (props) => {
         : setVeg(props.mealData.vegetables.name);
 
       props.mealData.fat.name === ""
-        ? setFat(`${2 * 6} Almonds`)
+        ? setFat(`${2 * 1} tsp of Olive Oil`)
         : setFat(props.mealData.fat.name);
 
       props.mealData.starch.name === ""
-        ? setStarch(`${2 * 0.25} Cup of oat  (uncooked)`)
+        ? setStarch(`${2 * 1} Whole grain toast`)
         : setStarch(props.mealData.starch.name);
     } else if (cal < 2350) {
       setBreakFast([2, 2, 2, 2, 1, 1]);
@@ -260,7 +260,7 @@ const BreakFastS = (props) => {
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${1 * 0.75} CUP of  Mango`)
+        ? setFruit(`${1 * 1} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
@@ -272,11 +272,11 @@ const BreakFastS = (props) => {
         : setVeg(props.mealData.vegetables.name);
 
       props.mealData.fat.name === ""
-        ? setFat(`${2 * 6} Almonds`)
+        ? setFat(`${2 * 1} tsp of Olive Oil`)
         : setFat(props.mealData.fat.name);
 
       props.mealData.starch.name === ""
-        ? setStarch(`${2 * 0.25} Cup of oat  (uncooked)`)
+        ? setStarch(`${2 * 1} Whole grain toast`)
         : setStarch(props.mealData.starch.name);
     } else if (cal < 2450) {
       setBreakFast([2, 2, 2, 2, 1, 1]);
@@ -286,7 +286,7 @@ const BreakFastS = (props) => {
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${1 * 0.75} CUP of  Mango`)
+        ? setFruit(`${1 * 1} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
@@ -298,11 +298,11 @@ const BreakFastS = (props) => {
         : setVeg(props.mealData.vegetables.name);
 
       props.mealData.fat.name === ""
-        ? setFat(`${2 * 6} Almonds`)
+        ? setFat(`${2 * 1} tsp of Olive Oil`)
         : setFat(props.mealData.fat.name);
 
       props.mealData.starch.name === ""
-        ? setStarch(`${2 * 0.25} Cup of oat  (uncooked)`)
+        ? setStarch(`${2 * 1} Whole grain toast`)
         : setStarch(props.mealData.starch.name);
     } else if (cal < 2550) {
       setBreakFast([2, 2, 2, 2, 1, 1]);
@@ -312,7 +312,7 @@ const BreakFastS = (props) => {
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${1 * 0.75} CUP of  Mango`)
+        ? setFruit(`${1 * 1} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
@@ -324,11 +324,11 @@ const BreakFastS = (props) => {
         : setVeg(props.mealData.vegetables.name);
 
       props.mealData.fat.name === ""
-        ? setFat(`${2 * 6} Almonds`)
+        ? setFat(`${2 * 1} tsp of Olive Oil`)
         : setFat(props.mealData.fat.name);
 
       props.mealData.starch.name === ""
-        ? setStarch(`${2 * 0.25} Cup of oat  (uncooked)`)
+        ? setStarch(`${2 * 1} Whole grain toast`)
         : setStarch(props.mealData.starch.name);
     } else if (cal < 2650) {
       setBreakFast([2, 2, 2, 2, 2, 1]);
@@ -338,7 +338,7 @@ const BreakFastS = (props) => {
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of  Mango`)
+        ? setFruit(`${2 * 1} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
@@ -350,11 +350,11 @@ const BreakFastS = (props) => {
         : setVeg(props.mealData.vegetables.name);
 
       props.mealData.fat.name === ""
-        ? setFat(`${2 * 6} Almonds`)
+        ? setFat(`${2 * 1} tsp of Olive Oil`)
         : setFat(props.mealData.fat.name);
 
       props.mealData.starch.name === ""
-        ? setStarch(`${2 * 0.25} Cup of oat  (uncooked)`)
+        ? setStarch(`${2 * 1} Whole grain toast`)
         : setStarch(props.mealData.starch.name);
     } else if (cal < 2750) {
       setBreakFast([2, 2, 1, 2, 2, 1]);
@@ -364,7 +364,7 @@ const BreakFastS = (props) => {
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of  Mango`)
+        ? setFruit(`${2 * 1} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
@@ -376,11 +376,11 @@ const BreakFastS = (props) => {
         : setVeg(props.mealData.vegetables.name);
 
       props.mealData.fat.name === ""
-        ? setFat(`${1 * 6} Almonds`)
+        ? setFat(`${1 * 1} tsp of Olive Oil`)
         : setFat(props.mealData.fat.name);
 
       props.mealData.starch.name === ""
-        ? setStarch(`${2 * 0.25} Cup of oat  (uncooked)`)
+        ? setStarch(`${2 * 1} Whole grain toast`)
         : setStarch(props.mealData.starch.name);
     } else if (cal < 2850) {
       setBreakFast([2, 2, 1, 2, 1, 1]);
@@ -390,7 +390,7 @@ const BreakFastS = (props) => {
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${1 * 0.75} CUP of  Mango`)
+        ? setFruit(`${1 * 1} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
@@ -402,11 +402,11 @@ const BreakFastS = (props) => {
         : setVeg(props.mealData.vegetables.name);
 
       props.mealData.fat.name === ""
-        ? setFat(`${1 * 6} Almonds`)
+        ? setFat(`${1 * 1} tsp of Olive Oil`)
         : setFat(props.mealData.fat.name);
 
       props.mealData.starch.name === ""
-        ? setStarch(`${2 * 0.25} Cup of oat  (uncooked)`)
+        ? setStarch(`${2 * 1} Whole grain toast`)
         : setStarch(props.mealData.starch.name);
     } else if (cal < 2950) {
       setBreakFast([2, 2, 2, 2, 2, 1]);
@@ -416,7 +416,7 @@ const BreakFastS = (props) => {
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of  Mango`)
+        ? setFruit(`${2 * 1} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
@@ -428,11 +428,11 @@ const BreakFastS = (props) => {
         : setVeg(props.mealData.vegetables.name);
 
       props.mealData.fat.name === ""
-        ? setFat(`${2 * 6} Almonds`)
+        ? setFat(`${2 * 1} tsp of Olive Oil`)
         : setFat(props.mealData.fat.name);
 
       props.mealData.starch.name === ""
-        ? setStarch(`${2 * 0.25} Cup of oat  (uncooked)`)
+        ? setStarch(`${2 * 1} Whole grain toast`)
         : setStarch(props.mealData.starch.name);
     } else if (cal < 3050) {
       setBreakFast([2, 2, 2, 2, 2, 1]);
@@ -442,7 +442,7 @@ const BreakFastS = (props) => {
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of  Mango`)
+        ? setFruit(`${2 * 1} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
@@ -454,11 +454,11 @@ const BreakFastS = (props) => {
         : setVeg(props.mealData.vegetables.name);
 
       props.mealData.fat.name === ""
-        ? setFat(`${2 * 6} Almonds`)
+        ? setFat(`${2 * 1} tsp of Olive Oil`)
         : setFat(props.mealData.fat.name);
 
       props.mealData.starch.name === ""
-        ? setStarch(`${2 * 0.25} Cup of oat  (uncooked)`)
+        ? setStarch(`${2 * 1} Whole grain toast`)
         : setStarch(props.mealData.starch.name);
     } else if (cal < 3150) {
       setBreakFast([2, 2, 2, 2, 2, 1]);
@@ -468,7 +468,7 @@ const BreakFastS = (props) => {
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of  Mango`)
+        ? setFruit(`${2 * 1} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
@@ -480,11 +480,11 @@ const BreakFastS = (props) => {
         : setVeg(props.mealData.vegetables.name);
 
       props.mealData.fat.name === ""
-        ? setFat(`${2 * 6} Almonds`)
+        ? setFat(`${2 * 1} tsp of Olive Oil`)
         : setFat(props.mealData.fat.name);
 
       props.mealData.starch.name === ""
-        ? setStarch(`${2 * 0.25} Cup of oat  (uncooked)`)
+        ? setStarch(`${2 * 1} Whole grain toast`)
         : setStarch(props.mealData.starch.name);
     } else if (cal < 3250) {
       setBreakFast([2, 2, 3, 2, 2, 1]);
@@ -494,7 +494,7 @@ const BreakFastS = (props) => {
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of  Mango`)
+        ? setFruit(`${2 * 1} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
@@ -506,11 +506,11 @@ const BreakFastS = (props) => {
         : setVeg(props.mealData.vegetables.name);
 
       props.mealData.fat.name === ""
-        ? setFat(`${3 * 6} Almonds`)
+        ? setFat(`${3 * 1} tsp of Olive Oil`)
         : setFat(props.mealData.fat.name);
 
       props.mealData.starch.name === ""
-        ? setStarch(`${2 * 0.25} Cup of oat  (uncooked)`)
+        ? setStarch(`${2 * 1} Whole grain toast`)
         : setStarch(props.mealData.starch.name);
     } else if (cal < 3350) {
       setBreakFast([2, 2, 3, 2, 2, 1]);
@@ -520,7 +520,7 @@ const BreakFastS = (props) => {
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of  Mango`)
+        ? setFruit(`${2 * 1} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
@@ -532,11 +532,11 @@ const BreakFastS = (props) => {
         : setVeg(props.mealData.vegetables.name);
 
       props.mealData.fat.name === ""
-        ? setFat(`${3 * 6} Almonds`)
+        ? setFat(`${3 * 1} tsp of Olive Oil`)
         : setFat(props.mealData.fat.name);
 
       props.mealData.starch.name === ""
-        ? setStarch(`${2 * 0.25} Cup of oat  (uncooked)`)
+        ? setStarch(`${2 * 1} Whole grain toast`)
         : setStarch(props.mealData.starch.name);
     } else if (cal < 3450) {
       setBreakFast([2, 2, 3, 3, 2, 1]);
@@ -546,7 +546,7 @@ const BreakFastS = (props) => {
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of  Mango`)
+        ? setFruit(`${2 * 1} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
@@ -558,11 +558,11 @@ const BreakFastS = (props) => {
         : setVeg(props.mealData.vegetables.name);
 
       props.mealData.fat.name === ""
-        ? setFat(`${3 * 6} Almonds`)
+        ? setFat(`${3 * 1} tsp of Olive Oil`)
         : setFat(props.mealData.fat.name);
 
       props.mealData.starch.name === ""
-        ? setStarch(`${2 * 0.25} Cup of oat  (uncooked)`)
+        ? setStarch(`${2 * 1} Whole grain toast`)
         : setStarch(props.mealData.starch.name);
     } else if (cal < 3550) {
       setBreakFast([2, 2, 3, 3, 2, 1]);
@@ -572,7 +572,7 @@ const BreakFastS = (props) => {
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of  Mango`)
+        ? setFruit(`${2 * 1} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
@@ -584,11 +584,11 @@ const BreakFastS = (props) => {
         : setVeg(props.mealData.vegetables.name);
 
       props.mealData.fat.name === ""
-        ? setFat(`${3 * 6} Almonds`)
+        ? setFat(`${3 * 1} tsp of Olive Oil`)
         : setFat(props.mealData.fat.name);
 
       props.mealData.starch.name === ""
-        ? setStarch(`${2 * 0.25} Cup of oat  (uncooked)`)
+        ? setStarch(`${2 * 1} Whole grain toast`)
         : setStarch(props.mealData.starch.name);
     }
   }, []);

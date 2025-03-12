@@ -5,13 +5,13 @@ import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
 import fruitImageDefault from "../public/imgs/5.png";
-import egg from "../public/imgs/3.png";
+import egg from "../public/imgss/43.png";
 import oat from "../public/imgs/1.png";
 import vegs from "../public/imgss/47.png";
 import salade from "../public/imgss/33.png";
-import f from "../public/imgss/24.png";
+import f from "../public/imgss/16.png";
 
-import milk from "../public/imgs/4.png";
+import milk from "../public/imgss/30.png";
 import DropdownS from "./DropdownS";
 
 const SecondSnackS = (props) => {
@@ -54,7 +54,7 @@ const SecondSnackS = (props) => {
       setBreakFast([1, 0, 0, 1, 0, 0.5]);
 
       props.mealData.milk.name === ""
-        ? setMilk1(`${1} CUP of Milk`)
+        ? setMilk1(`${1 * 0.66} CUP of Yogurt`)
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.vegetables.name === ""
@@ -66,11 +66,11 @@ const SecondSnackS = (props) => {
         : setStarch(props.mealData.starch.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${1 * 0.75} CUP of Mango`)
+        ? setFruit(`${1 * 0.75} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${0} Eggs`)
+        ? setMeat(`${0 * 30} G of Salmon`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -80,7 +80,7 @@ const SecondSnackS = (props) => {
       setBreakFast([1, 0, 0, 1, 0, 1]);
 
       props.mealData.milk.name === ""
-        ? setMilk1(`${1} CUP of Milk`)
+        ? setMilk1(`${1 * 0.66} CUP of Yogurt`)
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.vegetables.name === ""
@@ -92,11 +92,11 @@ const SecondSnackS = (props) => {
         : setStarch(props.mealData.starch.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${1 * 0.75} CUP of Mango`)
+        ? setFruit(`${1 * 0.75} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${0} Eggs`)
+        ? setMeat(`${0 * 30} G of Salmon`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -106,7 +106,7 @@ const SecondSnackS = (props) => {
       setBreakFast([1, 0, 0, 1, 0, 1]);
 
       props.mealData.milk.name === ""
-        ? setMilk1(`${1} CUP of Milk`)
+        ? setMilk1(`${1 * 0.66} CUP of Yogurt`)
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.vegetables.name === ""
@@ -118,11 +118,11 @@ const SecondSnackS = (props) => {
         : setStarch(props.mealData.starch.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${1 * 0.75} CUP of Mango`)
+        ? setFruit(`${1 * 0.75} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${0} Eggs`)
+        ? setMeat(`${0 * 30} G of Salmon`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -132,7 +132,7 @@ const SecondSnackS = (props) => {
       setBreakFast([1, 0, 0, 1, 0, 1]);
 
       props.mealData.milk.name === ""
-        ? setMilk1(`${1} CUP of Milk`)
+        ? setMilk1(`${1 * 0.66} CUP of Yogurt`)
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.vegetables.name === ""
@@ -144,11 +144,11 @@ const SecondSnackS = (props) => {
         : setStarch(props.mealData.starch.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${1 * 0.75} CUP of Mango`)
+        ? setFruit(`${1 * 0.75} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${0} Eggs`)
+        ? setMeat(`${0 * 30} G of Salmon`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -158,7 +158,7 @@ const SecondSnackS = (props) => {
       setBreakFast([1, 0, 0, 1, 0, 1]);
 
       props.mealData.milk.name === ""
-        ? setMilk1(`${1} CUP of Milk`)
+        ? setMilk1(`${1 * 0.66} CUP of Yogurt`)
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.vegetables.name === ""
@@ -170,11 +170,11 @@ const SecondSnackS = (props) => {
         : setStarch(props.mealData.starch.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${1 * 0.75} CUP of Mango`)
+        ? setFruit(`${1 * 0.75} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${0} Eggs`)
+        ? setMeat(`${0 * 30} G of Salmon`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -184,7 +184,7 @@ const SecondSnackS = (props) => {
       setBreakFast([1, 0, 0, 2, 0, 0]);
 
       props.mealData.milk.name === ""
-        ? setMilk1(`${1} CUP of Milk`)
+        ? setMilk1(`${1 * 0.66} CUP of Yogurt`)
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.vegetables.name === ""
@@ -196,11 +196,11 @@ const SecondSnackS = (props) => {
         : setStarch(props.mealData.starch.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of Mangoes`)
+        ? setFruit(`${2 * 0.75} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${0} Eggs`)
+        ? setMeat(`${0 * 30} G of Salmon`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -210,7 +210,7 @@ const SecondSnackS = (props) => {
       setBreakFast([1, 0, 0, 2, 0, 1]);
 
       props.mealData.milk.name === ""
-        ? setMilk1(`${1} CUP of Milk`)
+        ? setMilk1(`${1 * 0.66} CUP of Yogurt`)
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.vegetables.name === ""
@@ -222,11 +222,11 @@ const SecondSnackS = (props) => {
         : setStarch(props.mealData.starch.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of Mangoes`)
+        ? setFruit(`${2 * 0.75} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${0} Eggs`)
+        ? setMeat(`${0 * 30} G of Salmon`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -236,7 +236,7 @@ const SecondSnackS = (props) => {
       setBreakFast([1, 0, 1, 2, 1, 2]);
 
       props.mealData.milk.name === ""
-        ? setMilk1(`${1} CUP of Milk`)
+        ? setMilk1(`${1 * 0.66} CUP of Yogurt`)
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.vegetables.name === ""
@@ -248,7 +248,7 @@ const SecondSnackS = (props) => {
         : setStarch(props.mealData.starch.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of Mangoes`)
+        ? setFruit(`${2 * 0.75} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
@@ -262,7 +262,7 @@ const SecondSnackS = (props) => {
       setBreakFast([1, 0, 1, 2, 1, 2]);
 
       props.mealData.milk.name === ""
-        ? setMilk1(`${1} CUP of Milk`)
+        ? setMilk1(`${1 * 0.66} CUP of Yogurt`)
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.vegetables.name === ""
@@ -274,7 +274,7 @@ const SecondSnackS = (props) => {
         : setStarch(props.mealData.starch.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of Mangoes`)
+        ? setFruit(`${2 * 0.75} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
@@ -288,7 +288,7 @@ const SecondSnackS = (props) => {
       setBreakFast([1, 0, 1, 2, 1, 2]);
 
       props.mealData.milk.name === ""
-        ? setMilk1(`${1} CUP of Milk`)
+        ? setMilk1(`${1 * 0.66} CUP of Yogurt`)
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.vegetables.name === ""
@@ -300,7 +300,7 @@ const SecondSnackS = (props) => {
         : setStarch(props.mealData.starch.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of Mangoes`)
+        ? setFruit(`${2 * 0.75} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
@@ -314,7 +314,7 @@ const SecondSnackS = (props) => {
       setBreakFast([1, 0, 1, 2, 1, 2]);
 
       props.mealData.milk.name === ""
-        ? setMilk1(`${1} CUP of Milk`)
+        ? setMilk1(`${1 * 0.66} CUP of Yogurt`)
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.vegetables.name === ""
@@ -326,7 +326,7 @@ const SecondSnackS = (props) => {
         : setStarch(props.mealData.starch.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of Mangoes`)
+        ? setFruit(`${2 * 0.75} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
@@ -340,7 +340,7 @@ const SecondSnackS = (props) => {
       setBreakFast([1, 0, 1, 2, 1, 2]);
 
       props.mealData.milk.name === ""
-        ? setMilk1(`${1} CUP of Milk`)
+        ? setMilk1(`${1 * 0.66} CUP of Yogurt`)
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.vegetables.name === ""
@@ -352,7 +352,7 @@ const SecondSnackS = (props) => {
         : setStarch(props.mealData.starch.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of Mangoes`)
+        ? setFruit(`${2 * 0.75} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
@@ -366,7 +366,7 @@ const SecondSnackS = (props) => {
       setBreakFast([1, 0, 1, 2, 1, 2]);
 
       props.mealData.milk.name === ""
-        ? setMilk1(`${1} CUP of Milk`)
+        ? setMilk1(`${1 * 0.66} CUP of Yogurt`)
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.vegetables.name === ""
@@ -378,7 +378,7 @@ const SecondSnackS = (props) => {
         : setStarch(props.mealData.starch.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of Mangoes`)
+        ? setFruit(`${2 * 0.75} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
@@ -392,7 +392,7 @@ const SecondSnackS = (props) => {
       setBreakFast([2, 0, 1, 2, 1, 2]);
 
       props.mealData.milk.name === ""
-        ? setMilk1(`${2} CUP of Milk`)
+        ? setMilk1(`${2 * 0.66} CUP of Yogurt`)
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.vegetables.name === ""
@@ -404,7 +404,7 @@ const SecondSnackS = (props) => {
         : setStarch(props.mealData.starch.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of Mangoes`)
+        ? setFruit(`${2 * 0.75} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
@@ -418,7 +418,7 @@ const SecondSnackS = (props) => {
       setBreakFast([1, 2, 1, 2, 1, 1]);
 
       props.mealData.milk.name === ""
-        ? setMilk1(`${1} CUP of Milk`)
+        ? setMilk1(`${1 * 0.66} CUP of Yogurt`)
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.vegetables.name === ""
@@ -430,7 +430,7 @@ const SecondSnackS = (props) => {
         : setStarch(props.mealData.starch.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of Mangoes`)
+        ? setFruit(`${2 * 0.75} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
@@ -444,7 +444,7 @@ const SecondSnackS = (props) => {
       setBreakFast([0, 2, 2, 2, 2, 1]);
 
       props.mealData.milk.name === ""
-        ? setMilk1(`${0} CUP of Milk`)
+        ? setMilk1(`${0 * 0.66} CUP of Yogurt`)
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.vegetables.name === ""
@@ -456,11 +456,11 @@ const SecondSnackS = (props) => {
         : setStarch(props.mealData.starch.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of Mangoes`)
+        ? setFruit(`${2 * 0.75} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${2} Eggs`)
+        ? setMeat(`${2 * 30} G of Salmon`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -470,7 +470,7 @@ const SecondSnackS = (props) => {
       setBreakFast([1, 2, 2, 2, 2, 1]);
 
       props.mealData.milk.name === ""
-        ? setMilk1(`${1} CUP of Milk`)
+        ? setMilk1(`${1 * 0.66} CUP of Yogurt`)
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.vegetables.name === ""
@@ -482,11 +482,11 @@ const SecondSnackS = (props) => {
         : setStarch(props.mealData.starch.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of Mangoes`)
+        ? setFruit(`${2 * 0.75} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${2} Eggs`)
+        ? setMeat(`${2 * 30} G of Salmon`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -496,7 +496,7 @@ const SecondSnackS = (props) => {
       setBreakFast([1, 2, 2, 2, 2, 1]);
 
       props.mealData.milk.name === ""
-        ? setMilk1(`${1} CUP of Milk`)
+        ? setMilk1(`${1 * 0.66} CUP of Yogurt`)
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.vegetables.name === ""
@@ -508,11 +508,11 @@ const SecondSnackS = (props) => {
         : setStarch(props.mealData.starch.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of Mangoes`)
+        ? setFruit(`${2 * 0.75} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${2} Eggs`)
+        ? setMeat(`${2 * 30} G of Salmon`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -522,7 +522,7 @@ const SecondSnackS = (props) => {
       setBreakFast([1, 2, 2, 2, 2, 1]);
 
       props.mealData.milk.name === ""
-        ? setMilk1(`${1} CUP of Milk`)
+        ? setMilk1(`${1 * 0.66} CUP of Yogurt`)
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.vegetables.name === ""
@@ -534,11 +534,11 @@ const SecondSnackS = (props) => {
         : setStarch(props.mealData.starch.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of Mangoes`)
+        ? setFruit(`${2 * 0.75} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${2} Eggs`)
+        ? setMeat(`${2 * 30} G of Salmon`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -548,7 +548,7 @@ const SecondSnackS = (props) => {
       setBreakFast([1, 2, 2, 2, 2, 0]);
 
       props.mealData.milk.name === ""
-        ? setMilk1(`${1} CUP of Milk`)
+        ? setMilk1(`${1 * 0.66} CUP of Yogurt`)
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.vegetables.name === ""
@@ -560,11 +560,11 @@ const SecondSnackS = (props) => {
         : setStarch(props.mealData.starch.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of Mangoes`)
+        ? setFruit(`${2 * 0.75} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${2} Eggs`)
+        ? setMeat(`${2 * 30} G of Salmon`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -574,7 +574,7 @@ const SecondSnackS = (props) => {
       setBreakFast([1, 2, 2, 2, 1, 2]);
 
       props.mealData.milk.name === ""
-        ? setMilk1(`${1} CUP of Milk`)
+        ? setMilk1(`${1 * 0.66} CUP of Yogurt`)
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.vegetables.name === ""
@@ -586,7 +586,7 @@ const SecondSnackS = (props) => {
         : setStarch(props.mealData.starch.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of Mangoes`)
+        ? setFruit(`${2 * 0.75} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
@@ -600,7 +600,7 @@ const SecondSnackS = (props) => {
       setBreakFast([1, 2, 2, 2, 1, 2]);
 
       props.mealData.milk.name === ""
-        ? setMilk1(`${1} CUP of Milk`)
+        ? setMilk1(`${1 * 0.66} CUP of Yogurt`)
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.vegetables.name === ""
@@ -612,7 +612,7 @@ const SecondSnackS = (props) => {
         : setStarch(props.mealData.starch.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of Mangoes`)
+        ? setFruit(`${2 * 0.75} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
@@ -626,7 +626,7 @@ const SecondSnackS = (props) => {
       setBreakFast([1, 2, 2, 2, 1, 2]);
 
       props.mealData.milk.name === ""
-        ? setMilk1(`${1} CUP of Milk`)
+        ? setMilk1(`${1 * 0.66} CUP of Yogurt`)
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.vegetables.name === ""
@@ -638,11 +638,11 @@ const SecondSnackS = (props) => {
         : setStarch(props.mealData.starch.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of Mangoes`)
+        ? setFruit(`${2 * 0.75} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${1} Egg`)
+        ? setMeat(`${1 * 30} G of Salmon`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -652,7 +652,7 @@ const SecondSnackS = (props) => {
       setBreakFast([1, 2, 2, 2, 2, 2]);
 
       props.mealData.milk.name === ""
-        ? setMilk1(`${1} CUP of Milk`)
+        ? setMilk1(`${1 * 0.66} CUP of Yogurt`)
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.vegetables.name === ""
@@ -664,11 +664,11 @@ const SecondSnackS = (props) => {
         : setStarch(props.mealData.starch.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${2 * 0.75} CUP of Mangoes`)
+        ? setFruit(`${2 * 0.75} Apple`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${2} Eggs`)
+        ? setMeat(`${2 * 30} G of Salmon`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -723,7 +723,7 @@ const SecondSnackS = (props) => {
             <DropdownS
               title={veg}
               breakFast={breakFast}
-              meal={"breakfast"}
+              meal={"snack2"}
               d="vegetables"
               index={1}
               set={setVeg}
@@ -738,7 +738,7 @@ const SecondSnackS = (props) => {
             <DropdownS
               title={starch}
               breakFast={breakFast}
-              meal={"breakfast"}
+              meal={"snack2"}
               d="starch"
               index={2}
               set={setStarch}
@@ -756,7 +756,7 @@ const SecondSnackS = (props) => {
               title={meat}
               breakFast={breakFast}
               d="meat"
-              meal={"breakfast"}
+              meal={"snack2"}
               index={4}
               set={setMeat}
               setImage={setImageMeat}
@@ -771,7 +771,7 @@ const SecondSnackS = (props) => {
               title={fat}
               breakFast={breakFast}
               d="fat"
-              meal={"breakfast"}
+              meal={"snack2"}
               index={5}
               set={setFat}
               setImage={setImageFruit}
@@ -788,7 +788,7 @@ const SecondSnackS = (props) => {
               title={fruit}
               breakFast={breakFast}
               d="fruits"
-              meal={"breakfast"}
+              meal={"snack2"}
               index={3}
               set={setFruit}
               setImage={setImageMeat}
@@ -803,7 +803,7 @@ const SecondSnackS = (props) => {
               title={milk1}
               breakFast={breakFast}
               d="milk"
-              meal={"breakfast"}
+              meal={"snack2"}
               index={0}
               set={setMilk1}
               setImage={setImageFruit}
