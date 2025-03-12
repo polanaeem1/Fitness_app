@@ -446,10 +446,10 @@ const FirstSnackS = (props) => {
         ? setStarch(`${2} Cup of oat`)
         : setStarch(props.mealData.starch.name);
     } else if (cal < 2750) {
-      setBreakFast([0, 2, 2, 2, 2, 1]);
+      setBreakFast([1, 2, 2, 2, 2, 1]);
 
       props.mealData.milk.name === ""
-        ? setMilk1(`0 ML of Milk`)
+        ? setMilk1(`${1*240} ML of Milk`)
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.fruits.name === ""

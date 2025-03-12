@@ -442,7 +442,7 @@ const LunchS = (props) => {
         ? setFat(`${2 * 6} Almonds`)
         : setFat(props.mealData.fat.name);
     } else if (cal < 2750) {
-      setBreakFast([0, 2, 3, 1, 2, 1]);
+      setBreakFast([0, 2, 3, 2, 3, 2]);
 
       props.mealData.milk.name === ""
         ? setMilk1(`${0 * 240} ML of Milk`)
@@ -457,15 +457,15 @@ const LunchS = (props) => {
         : setStarch(props.mealData.starch.name);
 
       props.mealData.fruits.name === ""
-        ? setFruit(`${1} Mango`)
+        ? setFruit(`${2} Mango`)
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${2} Eggs`)
+        ? setMeat(`${3} Eggs`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
-        ? setFat(`${1 * 6} Almonds`)
+        ? setFat(`${2 * 6} Almonds`)
         : setFat(props.mealData.fat.name);
     } else if (cal < 2850) {
       setBreakFast([0, 2, 3, 1, 3, 2]);

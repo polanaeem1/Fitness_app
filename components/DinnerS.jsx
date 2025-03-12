@@ -441,10 +441,10 @@ const DinnerS = (props) => {
         ? setFat(`${2 * 6} Almonds`)
         : setFat(props.mealData.fat.name);
     } else if (cal < 2750) {
-      setBreakFast([0, 2, 1, 1, 2, 1]);
+      setBreakFast([1, 2, 1, 1, 2, 2]);
 
       props.mealData.milk.name === ""
-        ? setMilk1(`0 ML of Milk`)
+        ? setMilk1(`${1*240} ML of Milk`)
         : setMilk1(props.mealData.milk.name);
 
       props.mealData.vegetables.name === ""
@@ -464,7 +464,7 @@ const DinnerS = (props) => {
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
-        ? setFat(`${1 * 6} Almonds`)
+        ? setFat(`${2 * 6} Almonds`)
         : setFat(props.mealData.fat.name);
     } else if (cal < 2850) {
       setBreakFast([0, 2, 2, 2, 2, 2]);
