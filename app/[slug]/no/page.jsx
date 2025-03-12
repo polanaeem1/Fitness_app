@@ -243,7 +243,7 @@ const page = () => {
                   Sedentary
                 </h5>
                 <p className="text-white text-[0.8rem] lg:text-[1rem] font-bold">
-                  1-2 days / week
+                  Activities required for typical daily living
                 </p>
               </motion.div>
               <motion.div
@@ -275,7 +275,7 @@ const page = () => {
                   Low Active
                 </h5>
                 <p className="text-white text-[0.8rem] lg:text-[1rem] font-bold">
-                  3-4 days / week
+                  Daily living +30-60 min
                 </p>
               </motion.div>
               <motion.div
@@ -307,7 +307,7 @@ const page = () => {
                   Active
                 </h5>
                 <p className="text-white text-[0.8rem] lg:text-[1rem] font-bold">
-                  5-6 days / week
+                  Daily living + ≥60 min
                 </p>
               </motion.div>
               <motion.div
@@ -339,7 +339,7 @@ const page = () => {
                   Very Active
                 </h5>
                 <p className="text-white text-[0.8rem] lg:text-[1rem] font-bold">
-                  5-6 days / week
+                  Daily living + ≥ 120 min
                 </p>
               </motion.div>
             </motion.div>
