@@ -4,12 +4,12 @@ import { useParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
-import Dropdown from "@/components/Dropdown";
-import FirstSnack from "@/components/FirstSnack";
-import BreakFast from "@/components/BreakFast";
-import Lunch from "@/components/Lunch";
-import SecondSnack from "@/components/SecondSnack";
-import Dinner from "@/components/Dinner";
+import Dropdown from "../../../../components/Dropdown";
+import FirstSnack from "../../../../components/FirstSnack";
+import BreakFast from "../../../../components/BreakFast";
+import Lunch from "../../../../components/Lunch";
+import SecondSnack from "../../../../components/SecondSnack";
+import Dinner from "../../../../components/Dinner";
 
 const page = () => {
   const [imageMeat, setImageMeat] = useState("");
@@ -58,10 +58,10 @@ const page = () => {
     meat: { img: "", name: "" },
   });
   const [DinnerData, setDinnerData] = useState({
-    vegetable:{ img: "", name: "" },
-    starch:{ img: "", name: "" },
-    milk:{ img: "", name: "" },
-    meat:{ img: "", name: "" },
+    vegetable: { img: "", name: "" },
+    starch: { img: "", name: "" },
+    milk: { img: "", name: "" },
+    meat: { img: "", name: "" },
   });
   const components = [
     <BreakFast mealData={BreakFastData} setMeal={setBreakFastData} />,
@@ -138,7 +138,7 @@ const page = () => {
                   className="mt-10 px-9 py-2 bg-[#06a5f6] font-bold text-xl rounded-lg cursor-pointer hover:bg-[#1d76a2]"
                   onClick={handleClick}
                 >
-                  Show Me
+                  {parseFloat(cal).toFixed(2)} KCal
                 </button>
               </motion.div>
             </>

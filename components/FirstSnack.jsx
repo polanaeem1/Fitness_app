@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
 import fruitImageDefault from "../public/imgs/5.png";
-import Dropdown from "@/components/Dropdown";
+import Dropdown from "./Dropdown";
 
 const FirstSnack = (props) => {
   const [imageMeat, setImageMeat] = useState("");

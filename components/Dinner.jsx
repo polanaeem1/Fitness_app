@@ -8,7 +8,7 @@ import egg from "../public/imgs/35.png";
 import oat from "../public/imgs/29.png";
 import salade from "../public/imgs/salade.png";
 import milk from "../public/imgs/21.png";
-import Dropdown from "@/components/Dropdown";
+import Dropdown from "./Dropdown";
 
 const Dinner = (props) => {
   const [imageMeat, setImageMeat] = useState("");

@@ -8,7 +8,7 @@ import chb from "../public/imgs/15.png";
 import alm from "../public/imgs/6.png";
 import rice from "../public/imgs/13.png";
 import vegetable from "../public/imgs/31.png";
-import Dropdown from "@/components/Dropdown";
+import Dropdown from "./Dropdown";
 
 const Lunch = (props) => {
   const [imageMeat, setImageMeat] = useState("");

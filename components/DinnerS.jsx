@@ -13,7 +13,6 @@ import f from "../public/imgss/23.png";
 
 import milk from "../public/imgs/4.png";
 import DropdownS from "./DropdownS";
-import Dropdown from "@/components/Dropdown";
 
 const DinnerS = (props) => {
   const [imageMeat, setImageMeat] = useState("");

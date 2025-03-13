@@ -7,7 +7,7 @@ import Image from "next/image";
 import chb from "../public/imgs/15.png";
 import rice from "../public/imgs/13.png";
 import vegetable from "../public/imgs/31.png";
-import Dropdown from "@/components/Dropdown";
+import Dropdown from "./Dropdown";
 import alm from "../public/imgs/6.png";
 import fruitImageDefault from "../public/imgs/22.png";
 import egg from "../public/imgs/3.png";

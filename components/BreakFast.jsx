@@ -8,7 +8,7 @@ import egg from "../public/imgs/3.png";
 import oat from "../public/imgs/1.png";
 import salade from "../public/imgs/salade.png";
 import milk from "../public/imgs/4.png";
-import Dropdown from "@/components/Dropdown";
+import Dropdown from "./Dropdown";
 
 const BreakFast = (props) => {
   const [imageMeat, setImageMeat] = useState("");

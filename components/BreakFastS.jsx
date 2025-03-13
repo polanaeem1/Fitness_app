@@ -11,7 +11,6 @@ import salade from "../public/imgss/31.png";
 import f from "../public/imgss/16.png";
 
 import milk from "../public/imgs/4.png";
-import Dropdown from "@/components/Dropdown";
 import DropdownS from "./DropdownS";
 
 const BreakFastS = (props) => {
