@@ -19,6 +19,7 @@ const page = () => {
   const [moderate, setModerate] = useState(false);
   const [heavy, setHeavy] = useState(false);
   const [veryActive, setveryActive] = useState(false);
+  const [error, setError] = useState("");
   let pa;
   const router = useRouter();
   const location = usePathname();
@@ -88,6 +89,8 @@ const page = () => {
     );
     if (wvalue != "" && hvalue != "" && avalue != "" && pa != "") {
       router.push(location + `/${cal}`);
+    } else {
+      setError("Check all  Entites");
     }
   };
   return (
@@ -360,6 +363,11 @@ const page = () => {
             >
               Calculate
             </motion.button>
+            {error && (
+              <p className="md:text-[2rem] mt-[-5rem] text-[1rem] text-[#ff003b] font-semibold text-center md:mt-[-5rem]">
+                {error}
+              </p>
+            )}
           </motion.div>
         </motion.div>
       </div>
