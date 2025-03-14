@@ -12,7 +12,6 @@ const DropdownItem = (props) => {
     props.set(props.title + " (" + props.amount + ")");
     props.setImage(props.id + ".png");
     props.setIsOpen(false);
-    console.log(props.d);
     let s = props.d;
     props.setMeal({
       ...props.mealData,
@@ -23,7 +22,7 @@ const DropdownItem = (props) => {
         img: props.id + ".png",
       },
     });
-    console.log(props);
+    console.log(props.quantity * props.amount);
   };
 
   return (
