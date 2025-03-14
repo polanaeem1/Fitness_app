@@ -563,7 +563,7 @@ const BreakFastS = (props) => {
       props.mealData.starch.name === ""
         ? setStarch(`${2 * 1} Whole grain toast`)
         : setStarch(props.mealData.starch.name);
-    } else if (cal < 3550) {
+    } else if (cal >= 3450) {
       setBreakFast([2, 2, 3, 3, 2, 1]);
 
       props.mealData.milk.name === ""

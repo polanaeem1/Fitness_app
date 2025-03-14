@@ -648,7 +648,7 @@ const LunchS = (props) => {
       props.mealData.fat.name === ""
         ? setFat(`${3 * 1} tsp of Olive Oil`)
         : setFat(props.mealData.fat.name);
-    } else if (cal < 3550) {
+    } else if (cal >= 3450) {
       setBreakFast([0, 3, 4, 2, 3, 5]);
 
       props.mealData.milk.name === ""

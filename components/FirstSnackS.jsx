@@ -647,7 +647,7 @@ const FirstSnackS = (props) => {
       props.mealData.starch.name === ""
         ? setStarch(`${2 * 0.5} Cup of Mashed Potato`)
         : setStarch(props.mealData.starch.name);
-    } else if (cal < 3550) {
+    } else if (cal >= 3450) {
       setBreakFast([1, 2, 2, 2, 2, 3]);
       props.mealData.milk.name === ""
         ? setMilk1(`${1} CUP of Milk`)

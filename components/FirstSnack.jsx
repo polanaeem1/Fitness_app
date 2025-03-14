@@ -6,13 +6,16 @@ import { AnimatePresence, motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
 import ba from "../public/imgs/5.png";
 import Dropdown from "./Dropdown";
+import milk from "../public/imgs/4.png";
 
 const FirstSnack = (props) => {
   const params = useParams();
   const { cal } = params;
 
   let FruitServes;
+  let milkServes;
 
+  const [imageMilk, setImageMilk] = useState("");
   const [breakFast, setBreakFast] = useState([]);
   const [visibale, setVisibale] = useState(false);
   const [meat, setMeat] = useState(`Eggs`);
@@ -32,14 +35,21 @@ const FirstSnack = (props) => {
   useEffect(() => {
     const calCHO = () => {
       let CHO = Math.round((parseInt(cal) * 0.55) / 4);
+      milkServes = Math.round((0.11 * CHO) / 15);
       FruitServes = Math.round((0.24 * CHO) / 15);
     };
 
     calCHO();
-    setBreakFast([Math.round(0.44 * FruitServes)]);
+    setBreakFast([
+      Math.round(0.22 * FruitServes),
+      Math.round(0.25 * milkServes),
+    ]);
+    props.mealData.milk.name === ""
+      ? setMilk1(`${Math.round(0.25 * milkServes) * 240} ML of Milk`)
+      : setMilk1(props.mealData.milk.name);
 
     props.mealData.fruits.name === ""
-      ? setFruit(`${Math.round(0.44 * FruitServes) * 1} Banana`)
+      ? setFruit(`${Math.round(0.22 * FruitServes) * 1} Banana`)
       : setFruit(props.mealData.fruits.name);
   }, []);
   return (
@@ -66,6 +76,17 @@ const FirstSnack = (props) => {
             setMeal={props.setMeal}
             mealData={props.mealData}
           />
+          <Dropdown
+            title={milk1}
+            breakFast={breakFast}
+            meal={"snack1"}
+            d="milk"
+            index={1}
+            set={setMilk1}
+            setImage={setImageMilk}
+            setMeal={props.setMeal}
+            mealData={props.mealData}
+          />
         </div>
       </motion.div>
       <motion.div
@@ -73,6 +94,18 @@ const FirstSnack = (props) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: !visibale ? 1 : 0 }}
       >
+        <motion.div className="flex items-center xl:w-fit lg:w-1/2">
+          <Image
+            src={
+              props.mealData.milk.img == ""
+                ? milk
+                : `/imgs/${props.mealData.milk.img}`
+            }
+            width={339.25}
+            height={600}
+            alt="milk"
+          />
+        </motion.div>
         <motion.div className="flex flex-col flex-wrap">
           <motion.div className="flex flex-row flex-wrap  justify-center ">
             {props.mealData.fruits.img == "" ||

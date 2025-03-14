@@ -6,6 +6,14 @@ import Image from "next/image";
 import gb from "../../../../public/imgss/gb.jpg";
 import mango from "../../../../public/imgss/mango.jpg";
 import se from "../../../../public/imgss/se.jpg";
+import gm from "../../../../public/imgss/gm.webp";
+import sl from "../../../../public/imgss/sl.jpg";
+import tc from "../../../../public/imgss/tc.jpg";
+import go from "../../../../public/imgss/go.jpeg";
+import eg from "../../../../public/imgss/eg.jpg";
+import fs from "../../../../public/imgss/fs.jpg";
+import li from "../../../../public/imgss/li.jpeg";
+import g from "../../../../public/imgss/g.jpg";
 
 import {
   Accordion,
@@ -251,6 +259,7 @@ const page = () => {
                 production.
                 <br /> • Consume balanced meals and avoid processed and refined
                 foods.
+                <br /> • Consistent meal timing boosts metabolism and health.
               </AccordionBody>
             </Accordion>
             <Accordion
@@ -469,7 +478,7 @@ const page = () => {
             </div>
             <div className="flex xl:flex-row gap-12 bg-[#90abb9d7] rounded-3xl overflow-hidden flex-col max-w-[15rem] md:max-w-[30rem] xl:max-w-[90rem] xl:w-[90rem]">
               <div className="md:max-w-[30rem] max-w-[15rem] ">
-                <Image src={mango} alt="mango" />
+                <Image src={gm} alt="mango" />
               </div>
               <div className="flex flex-col gap-5 justify-center items-center xl:items-start">
                 <h2 className="xl:text-[2.5rem]  text-white md:text-[1.5rem] text-[1.1rem]">
@@ -498,7 +507,7 @@ const page = () => {
             </div>
             <div className="flex xl:flex-row gap-12 bg-[#90abb9d7] rounded-3xl overflow-hidden flex-col max-w-[15rem] md:max-w-[30rem] xl:max-w-[90rem] xl:w-[90rem]">
               <div className="md:max-w-[30rem] max-w-[15rem] ">
-                <Image src={mango} alt="mango" />
+                <Image src={sl} alt="mango" />
               </div>
               <div className="flex flex-col gap-5 justify-center items-center xl:items-start">
                 <h2 className="xl:text-[2.5rem]  text-white md:text-[1.5rem] text-[1.1rem]">
@@ -524,8 +533,8 @@ const page = () => {
               </div>
             </div>
             <div className="flex xl:flex-row gap-12 bg-[#90abb9d7] rounded-3xl overflow-hidden flex-col max-w-[15rem] md:max-w-[30rem] xl:max-w-[90rem] xl:w-[90rem]">
-              <div className="md:max-w-[30rem] max-w-[15rem] ">
-                <Image src={mango} alt="mango" />
+              <div className="md:max-w-[30rem]  max-w-[15rem]">
+                <Image src={tc} alt="mango" className="md:h-[20rem]" />
               </div>
               <div className="flex flex-col gap-5 justify-center items-center xl:items-start">
                 <h2 className="xl:text-[2.5rem]  text-white md:text-[1.5rem] text-[1.1rem]">
@@ -555,7 +564,7 @@ const page = () => {
             </div>
             <div className="flex xl:flex-row gap-12 bg-[#90abb9d7] rounded-3xl overflow-hidden flex-col max-w-[15rem] md:max-w-[30rem] xl:max-w-[90rem] xl:w-[90rem]">
               <div className="md:max-w-[30rem] max-w-[15rem] ">
-                <Image src={mango} alt="mango" />
+                <Image src={go} alt="mango" />
               </div>
               <div className="flex flex-col gap-5 justify-center items-center xl:items-start">
                 <h2 className="xl:text-[2.5rem]  text-white md:text-[1.5rem] text-[1.1rem]">
@@ -583,7 +592,7 @@ const page = () => {
             </div>
             <div className="flex xl:flex-row gap-12 bg-[#90abb9d7] rounded-3xl overflow-hidden flex-col max-w-[15rem] md:max-w-[30rem] xl:max-w-[90rem] xl:w-[90rem]">
               <div className="md:max-w-[30rem] max-w-[15rem] ">
-                <Image src={mango} alt="mango" />
+                <Image src={eg} alt="mango" />
               </div>
               <div className="flex flex-col gap-5 justify-center items-center xl:items-start">
                 <h2 className="xl:text-[2.5rem]  text-white md:text-[1.5rem] text-[1.1rem]">
@@ -612,7 +621,7 @@ const page = () => {
             </div>
             <div className="flex xl:flex-row gap-12 bg-[#90abb9d7] rounded-3xl overflow-hidden flex-col max-w-[15rem] md:max-w-[30rem] xl:max-w-[90rem] xl:w-[90rem]">
               <div className="md:max-w-[30rem] max-w-[15rem] ">
-                <Image src={mango} alt="mango" />
+                <Image src={fs} alt="mango" />
               </div>
               <div className="flex flex-col gap-5 justify-center items-center xl:items-start">
                 <h2 className="xl:text-[2.5rem]  text-white md:text-[1.5rem] text-[1.1rem]">
@@ -641,7 +650,7 @@ const page = () => {
             </div>
             <div className="flex xl:flex-row gap-12 bg-[#90abb9d7] rounded-3xl overflow-hidden flex-col max-w-[15rem] md:max-w-[30rem] xl:max-w-[90rem] xl:w-[90rem]">
               <div className="md:max-w-[30rem] max-w-[15rem] ">
-                <Image src={mango} alt="mango" />
+                <Image src={li} alt="mango" />
               </div>
               <div className="flex flex-col gap-5 justify-center items-center xl:items-start">
                 <h2 className="xl:text-[2.5rem]  text-white md:text-[1.5rem] text-[1.1rem]">
@@ -667,9 +676,12 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="flex xl:flex-row gap-12 bg-[#90abb9d7] rounded-3xl overflow-hidden flex-col max-w-[15rem] md:max-w-[30rem] xl:max-w-[90rem] xl:w-[90rem]">
+            <div className="flex xl:flex-row gap-12 bg-[#90abb9d7] rounded-3xl overflow-hidden flex-col max-w-[15rem] md:max-w-[30rem] xl:max-w-[90rem] xl:w-[90rem] mb-16">
               <div className="md:max-w-[30rem] max-w-[15rem] ">
-                <img src={"https://modifyhealth.com/cdn/shop/products/ISO_Grilled-Steak-with-Sumac-Carrots_Broccoli-_-Mashed-Potatoes_grande.png?v=1614026268"} alt="mango" />
+                <Image
+                  src={g}
+                  alt="mango"
+                />
               </div>
               <div className="flex flex-col gap-5 justify-center items-center xl:items-start">
                 <h2 className="xl:text-[2.5rem]  text-white md:text-[1.5rem] text-[1.1rem]">

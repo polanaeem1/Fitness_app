@@ -99,7 +99,7 @@ export default function Home() {
                   transition={{ duration: 0.5 }}
                 >
                   <h3 className="text-white sm:text-[3rem] font-bold text-[1.5rem]">
-                    Do you do sport ?
+                    Do you do exercise ?
                   </h3>
                   <motion.div className="flex gap-10 sm:gap-12 mt-8 flex-wrap sm:flex-nowrap">
                     {" "}
