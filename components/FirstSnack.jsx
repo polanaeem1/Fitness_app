@@ -4,10 +4,7 @@ import { useParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
-import egg from "../public/imgs/3.png";
-import oat from "../public/imgs/1.png";
-import salade from "../public/imgs/salade.png";
-import milk from "../public/imgs/4.png";
+import ba from "../public/imgs/5.png";
 import Dropdown from "./Dropdown";
 
 const FirstSnack = (props) => {
@@ -33,12 +30,10 @@ const FirstSnack = (props) => {
   };
 
   useEffect(() => {
-
     const calCHO = () => {
       let CHO = Math.round((parseInt(cal) * 0.55) / 4);
       FruitServes = Math.round((0.24 * CHO) / 15);
     };
-
 
     calCHO();
     setBreakFast([Math.round(0.44 * FruitServes)]);
@@ -56,12 +51,12 @@ const FirstSnack = (props) => {
         className=" md:basis-3/6"
       >
         <h3 className="xl:text-[8rem] font-bold lg:text-[6rem] md:text-[4rem] text-[3rem]">
-          <span className="text-[#06a5f6]">Break</span>
-          fast
+          <span className="text-[#06a5f6]">First</span>
+          Snack
         </h3>
         <div className="flex lg:flex-row mt-4 flex-col">
           <Dropdown
-            title={milk1}
+            title={fruit}
             breakFast={breakFast}
             meal={"snack1"}
             d="fruits"
@@ -74,38 +69,21 @@ const FirstSnack = (props) => {
         </div>
       </motion.div>
       <motion.div
-        className="md:basis-3/6 md:flex md:flex-row  hidden gap-6"
+        className="md:basis-3/6 md:flex md:flex-row hidden gap-6"
         initial={{ opacity: 0 }}
         animate={{ opacity: !visibale ? 1 : 0 }}
       >
-        <motion.div className="flex items-center xl:w-fit lg:w-1/2">
-          <Image src={milk} width={339.25} height={600} alt="milk" />
-        </motion.div>
         <motion.div className="flex flex-col flex-wrap">
           <motion.div className="flex flex-row flex-wrap  justify-center ">
             {props.mealData.fruits.img == "" ||
-            props.mealData.fruits.img == "3.png" ? (
+            props.mealData.fruits.img == "5.png" ? (
               <>
                 <Image
-                  src={egg}
+                  src={ba}
                   width={120}
                   height={150}
                   alt="Egg"
-                  className=" lg:w-[6rem] lg:h-[6rem] md:w-[4rem] md:h-[4rem]"
-                />
-                <Image
-                  src={egg}
-                  width={120}
-                  height={150}
-                  alt="Egg"
-                  className=" lg:w-[6rem] lg:h-[6rem] md:w-[4rem] md:h-[4rem]"
-                />
-                <Image
-                  src={egg}
-                  width={120}
-                  height={150}
-                  alt="Egg"
-                  className=" lg:w-[6rem] lg:h-[6rem] md:w-[4rem] md:h-[4rem]"
+                  className=" lg:w-[15rem] lg:h-[15rem] md:w-[7rem] md:h-[7rem] ml-24"
                 />
               </>
             ) : (
