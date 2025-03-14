@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
 import Dropdown from "../../../../components/Dropdown";
-import FirstSnack from "../../../../components/FirstSnack";
+// import FirstSnack from "../../../../components/FirstSnack";
 import BreakFast from "../../../../components/BreakFast";
 import Lunch from "../../../../components/Lunch";
 import SecondSnack from "../../../../components/SecondSnack";
@@ -65,7 +65,7 @@ const page = () => {
   });
   const components = [
     <BreakFast mealData={BreakFastData} setMeal={setBreakFastData} />,
-    <FirstSnack mealData={Snack1tData} setMeal={setSnack1tData} />,
+    // <FirstSnack mealData={Snack1tData} setMeal={setSnack1tData} />,
     <Lunch mealData={LunchData} setMeal={setLunchData} />,
     <SecondSnack mealData={Snack2tData} setMeal={setSnack2tData} />,
     <Dinner mealData={DinnerData} setMeal={setDinnerData} />,
