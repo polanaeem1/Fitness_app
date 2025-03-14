@@ -84,7 +84,7 @@ const FirstSnack = (props) => {
             breakFast={breakFast}
             meal={"snack1"}
             d="fruits"
-            index={1}
+            index={0}
             set={setFruit}
             setImage={setImageFruit}
             setMeal={props.setMeal}
