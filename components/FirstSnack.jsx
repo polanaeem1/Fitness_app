@@ -79,7 +79,7 @@ const FirstSnack = (props) => {
         </h3>
 
         <div className="flex flex-row mt-10">
-          {/* <Dropdown
+          <Dropdown
             title={fruit}
             breakFast={breakFast}
             meal={"snack1"}
@@ -89,7 +89,7 @@ const FirstSnack = (props) => {
             setImage={setImageFruit}
             setMeal={props.setMeal}
             mealData={props.mealData}
-          /> */}
+          />
         </div>
       </motion.div>
       <motion.div
