@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import DropdownItem from "./DropdownItem";
-import data from "../app/dataS";
+import dataSecond from "../app/dataSecond";
 
 const DropdownS = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,7 +50,7 @@ const DropdownS = (props) => {
           {isOpen && (
             <>
               <div className="shadow absolute  bg-white top-100 z-40 w-full left-0 rounded max-h-44 overflow-y-auto">
-                {data[props.meal][props.d].map((e) => {
+                {dataSecond[props.meal][props.d].map((e) => {
                   return (
                     <DropdownItem
                       setIsOpen={setIsOpen}

@@ -1,4 +1,4 @@
-const data = {
+const dataSecond = {
   breakfast: {
     starch: [
       {
@@ -1840,4 +1840,4 @@ const data = {
     ],
   },
 };
-export default data;
+export default dataSecond;
