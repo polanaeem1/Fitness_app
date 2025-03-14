@@ -64,6 +64,7 @@ const FirstSnack = (props) => {
     props.mealData.fruits.name === ""
       ? setFruit(`${Math.round(0.44 * FruitServes) * 1} Bananas`)
       : setFruit(props.mealData.fruits.name);
+    console.log(Math.round(0.44 * FruitServes));
   }, []);
   return (
     <>
