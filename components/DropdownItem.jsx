@@ -22,7 +22,8 @@ const DropdownItem = (props) => {
         img: props.id + ".png",
       },
     });
-    console.log(props.quantity * props.amount);
+    console.log(props.amount);
+    console.log(props);
   };
 
   return (
