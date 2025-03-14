@@ -63,7 +63,7 @@ const Dinner = (props) => {
     calProtin();
     calFat();
     setBreakFast([
-      Math.round(0.5 * milkServes),
+      Math.round(0.25 * milkServes),
       Math.round(0.2 * StarchServes),
       Math.round(0.4 * VegServes),
       Math.round(0.2 * MeatServes),
@@ -73,7 +73,7 @@ const Dinner = (props) => {
       : setMeat(props.mealData.meat.name);
 
     props.mealData.milk.name === ""
-      ? setMilk1(`${Math.round(0.5 * milkServes) * 180} G of Yogurt`)
+      ? setMilk1(`${Math.round(0.25 * milkServes) * 180} G of Yogurt`)
       : setMilk1(props.mealData.milk.name);
 
     props.mealData.vegetable.name === ""

@@ -54,7 +54,10 @@ const FirstSnack = (props) => {
       Fat = Math.round((parseInt(cal) * 0.2) / 9);
       FatServes = Math.round((0.23 * Fat) / 5);
     };
-    setBreakFast([Math.round(0.44 * FruitServes)]);
+    setBreakFast([
+      Math.round(0.44 * FruitServes),
+      Math.round(0.25 * milkServes),
+    ]);
     calCHO();
     calProtin();
     calFat();
@@ -91,7 +94,6 @@ const FirstSnack = (props) => {
       </motion.div>
       <motion.div
         className="md:basis-3/6 md:flex md:flex-row  hidden justify-center items-center "
-
         initial={{ opacity: 0 }}
         animate={{ opacity: !visibale ? 1 : 0 }}
       >
@@ -105,7 +107,7 @@ const FirstSnack = (props) => {
           height={350}
           alt="Salade"
           className=" xl:w-[20rem] xl:h-[20rem] lg:w-[15rem] lg:h-[15rem]  md:w-[13rem] md:h-[13rem]"
-          />
+        />
       </motion.div>
     </>
   );
