@@ -80,7 +80,7 @@ const SecondSnack = (props) => {
       : setFruit(props.mealData.fruits.name);
 
     props.mealData.fat.name === ""
-      ? setFat(`${Math.round(0.33 * FatServes).toFixed(2)} Almonds`)
+      ? setFat(`${(Math.round(0.5 * FatServes)*6).toFixed(2)} Almonds`)
       : setFat(props.mealData.fat.name);
 
     props.mealData.meat.name === ""

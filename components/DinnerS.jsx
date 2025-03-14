@@ -69,7 +69,7 @@ const DinnerS = (props) => {
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${1} Egg White`)
+        ? setMeat(`${1 * 2} Egg White`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -95,7 +95,7 @@ const DinnerS = (props) => {
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${1} Egg White`)
+        ? setMeat(`${1 * 2} Egg White`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -121,7 +121,7 @@ const DinnerS = (props) => {
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${1} Egg White`)
+        ? setMeat(`${1 * 2} Egg White`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -147,7 +147,7 @@ const DinnerS = (props) => {
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${1} Egg White`)
+        ? setMeat(`${1 * 2} Egg White`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -173,7 +173,7 @@ const DinnerS = (props) => {
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${1} Egg White`)
+        ? setMeat(`${1 * 2} Egg White`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -199,7 +199,7 @@ const DinnerS = (props) => {
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${1} Egg White`)
+        ? setMeat(`${1 * 2} Egg White`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -225,7 +225,7 @@ const DinnerS = (props) => {
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${1} Egg White`)
+        ? setMeat(`${1 * 2} Egg White`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -251,7 +251,7 @@ const DinnerS = (props) => {
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${1} Egg White`)
+        ? setMeat(`${1 * 2} Egg White`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -277,7 +277,7 @@ const DinnerS = (props) => {
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${1} Egg White`)
+        ? setMeat(`${1 * 2} Egg White`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -303,7 +303,7 @@ const DinnerS = (props) => {
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${2 * 2} Egg White`)
+        ? setMeat(`${2 * 2 * 2} Egg White`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -329,7 +329,7 @@ const DinnerS = (props) => {
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${2 * 2} Egg White`)
+        ? setMeat(`${2 * 2 * 2} Egg White`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -355,7 +355,7 @@ const DinnerS = (props) => {
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${2 * 2} Egg White`)
+        ? setMeat(`${2 * 2 * 2} Egg White`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -381,7 +381,7 @@ const DinnerS = (props) => {
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${2 * 2} Egg White`)
+        ? setMeat(`${2 * 2 * 2} Egg White`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -407,7 +407,7 @@ const DinnerS = (props) => {
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${2 * 2} Egg White`)
+        ? setMeat(`${2 * 2 * 2} Egg White`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -433,7 +433,7 @@ const DinnerS = (props) => {
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${2 * 2} Egg White`)
+        ? setMeat(`${2 * 2 * 2} Egg White`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -459,7 +459,7 @@ const DinnerS = (props) => {
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${2 * 2} Egg White`)
+        ? setMeat(`${2 * 2 * 2} Egg White`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -485,7 +485,7 @@ const DinnerS = (props) => {
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${2 * 2} Egg White`)
+        ? setMeat(`${2 * 2 * 2} Egg White`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -511,7 +511,7 @@ const DinnerS = (props) => {
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${2 * 2} Egg White`)
+        ? setMeat(`${2 * 2 * 2} Egg White`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -537,7 +537,7 @@ const DinnerS = (props) => {
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${2 * 2} Egg White`)
+        ? setMeat(`${2 * 2 * 2} Egg White`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -563,7 +563,7 @@ const DinnerS = (props) => {
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${2 * 2} Egg White`)
+        ? setMeat(`${2 * 2 * 2} Egg White`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -589,7 +589,7 @@ const DinnerS = (props) => {
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${2 * 2} Egg White`)
+        ? setMeat(`${2 * 2 * 2} Egg White`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -615,7 +615,7 @@ const DinnerS = (props) => {
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${2 * 2} Egg White`)
+        ? setMeat(`${2 * 2 * 2} Egg White`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -641,7 +641,7 @@ const DinnerS = (props) => {
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${2 * 2} Egg White`)
+        ? setMeat(`${2 * 2 * 2} Egg White`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""
@@ -667,7 +667,7 @@ const DinnerS = (props) => {
         : setFruit(props.mealData.fruits.name);
 
       props.mealData.meat.name === ""
-        ? setMeat(`${2 * 2} Egg White`)
+        ? setMeat(`${2 * 2 * 2} Egg White`)
         : setMeat(props.mealData.meat.name);
 
       props.mealData.fat.name === ""

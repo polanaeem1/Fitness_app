@@ -43,6 +43,9 @@ const page = () => {
         REE = w * 10 + 6.25 * h - 5 * a - 161;
         TEE = REE * pa;
       }
+      if (slug === "weight-gain") {
+        TEE += 300;
+      }
       return TEE;
     } else {
       let REE;
@@ -53,6 +56,9 @@ const page = () => {
       } else if (gender === "female") {
         REE = w * 10 + 6.25 * h - 5 * a - 161;
         TEE = REE * pa;
+      }
+      if (slug === "weight-gain") {
+        TEE += 300;
       }
       return TEE;
     }

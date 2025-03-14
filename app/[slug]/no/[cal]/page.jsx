@@ -4,6 +4,8 @@ import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
 import gb from "../../../../public/imgss/gb.jpg";
+import mango from "../../../../public/imgss/mango.jpg";
+import se from "../../../../public/imgss/se.jpg";
 
 import {
   Accordion,
@@ -382,7 +384,7 @@ const page = () => {
             Recipes
           </h1>
           <div className="flex flex-col flex-wrap justify-center justify-around gap-12">
-            <div className="flex xl:flex-row gap-12 bg-[#90abb9d7] rounded-3xl overflow-hidden flex-col max-w-[15rem] md:max-w-[30rem] xl:max-w-max">
+            <div className="flex xl:flex-row gap-12 bg-[#90abb9d7] rounded-3xl overflow-hidden flex-col max-w-[15rem] md:max-w-[30rem] xl:max-w-[90rem] xl:w-[90rem]">
               <div className="md:max-w-[30rem] max-w-[15rem] ">
                 <Image src={gb} alt="gb" />
               </div>
@@ -392,10 +394,10 @@ const page = () => {
                 </h2>
                 <div className="flex xl:flex-row md:gap-12 gap-4 flex-col ml-6 mb-4 xl:ml-0 xl:mb-0">
                   <p className="text-white text-[1.1rem]">
-                    Calories: ~320 kcal <br /> Ingredients: • ¼ cup uncooked
-                    oats (20g) – 75 kcal <br />• 1 cup Greek yogurt (200g) – 150
-                    kcal <br />• 6 almonds (8g) – 50 kcal <br />• ¼ cup
-                    blueberries (37g) – 21 kcal
+                    Calories: ~320 kcal <br /> Ingredients: <br /> • ¼ cup
+                    uncooked oats (20g) – 75 kcal <br />• 1 cup Greek yogurt
+                    (200g) – 150 kcal <br />• 6 almonds (8g) – 50 kcal <br />• ¼
+                    cup blueberries (37g) – 21 kcal
                     <br /> • 1 tsp honey (optional, 7g) – 21 kcal <br />{" "}
                   </p>
                   <p className="text-white text-[1.1rem] mr-12">
@@ -410,30 +412,294 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="flex xl:flex-row gap-12 bg-[#90abb9d7] rounded-3xl overflow-hidden flex-col max-w-[15rem] md:max-w-[30rem] xl:max-w-max">
+            <div className="flex xl:flex-row gap-12 bg-[#90abb9d7] rounded-3xl overflow-hidden flex-col max-w-[15rem] md:max-w-[30rem] xl:max-w-[90rem] xl:w-[90rem]">
               <div className="md:max-w-[30rem] max-w-[15rem] ">
-                <Image src={gb} alt="gb" />
+                <Image src={mango} alt="mango" />
               </div>
               <div className="flex flex-col gap-5 justify-center items-center xl:items-start">
                 <h2 className="xl:text-[2.5rem]  text-white md:text-[1.5rem] text-[1.1rem]">
-                  Greek Yogurt Breakfast Bowl
+                  Healthy Mango & Banana Smoothie{" "}
                 </h2>
                 <div className="flex xl:flex-row md:gap-12 gap-4 flex-col ml-6 mb-4 xl:ml-0 xl:mb-0">
                   <p className="text-white text-[1.1rem]">
-                    Calories: ~320 kcal <br /> Ingredients: • ¼ cup uncooked
-                    oats (20g) – 75 kcal <br />• 1 cup Greek yogurt (200g) – 150
-                    kcal <br />• 6 almonds (8g) – 50 kcal <br />• ¼ cup
-                    blueberries (37g) – 21 kcal
-                    <br /> • 1 tsp honey (optional, 7g) – 21 kcal <br />{" "}
+                    Calories: ~280 kcal
+                    <br /> Ingredients:
+                    <br /> • ¾ cup mango (125g) – 80 kcal
+                    <br /> • ½ banana (50g) – 45 kcal <br /> • 1 cup milk
+                    (250ml) – 120 kcal
+                    <br /> • 4 almonds (5g) – 30 kcal <br /> • ½ tsp honey
+                    (optional, 3g) – 10 kcal
+                  </p>
+                  <p className="text-white text-[1.1rem] mr-12">
+                    Instructions:
+                    <br /> 1. Blend all ingredients until smooth.
+                    <br /> 2. Serve chilled and enjoy as a nutritious snack.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex xl:flex-row gap-12 bg-[#90abb9d7] rounded-3xl overflow-hidden flex-col max-w-[15rem] md:max-w-[30rem] xl:max-w-[90rem] xl:w-[90rem]">
+              <div className="md:max-w-[30rem] max-w-[15rem] ">
+                <Image src={se} alt="mango" />
+              </div>
+              <div className="flex flex-col gap-5 justify-center items-center xl:items-start">
+                <h2 className="xl:text-[2.5rem]  text-white md:text-[1.5rem] text-[1.1rem]">
+                  Scrambled Eggs with Whole Grain Toast
+                </h2>
+                <div className="flex xl:flex-row md:gap-12 gap-4 flex-col ml-6 mb-4 xl:ml-0 xl:mb-0">
+                  <p className="text-white text-[1.1rem]">
+                    Calories: ~290 kcal
+                    <br /> Ingredients: <br />• 1 whole egg (50g) – 70 kcal{" "}
+                    <br />• 1 egg white (33g) – 17 kcal <br />• 1 slice whole
+                    grain toast (30g) – 70 kcal
+                    <br /> • ½ tsp olive oil (2.5g) – 22 kcal <br />• ½ cup
+                    cooked vegetables (75g) – 40 kcal <br />• Salt & pepper to
+                    taste
+                  </p>
+                  <p className="text-white text-[1.1rem] mr-12">
+                    Instructions:
+                    <br /> 1. Heat olive oil in a pan and scramble the egg and
+                    egg white.
+                    <br /> 2. Toast the bread while the eggs cook.
+                    <br /> 3. Serve scrambled eggs with toast and cooked
+                    vegetables on the side.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex xl:flex-row gap-12 bg-[#90abb9d7] rounded-3xl overflow-hidden flex-col max-w-[15rem] md:max-w-[30rem] xl:max-w-[90rem] xl:w-[90rem]">
+              <div className="md:max-w-[30rem] max-w-[15rem] ">
+                <Image src={mango} alt="mango" />
+              </div>
+              <div className="flex flex-col gap-5 justify-center items-center xl:items-start">
+                <h2 className="xl:text-[2.5rem]  text-white md:text-[1.5rem] text-[1.1rem]">
+                  Grilled Beef with Mashed Potatoes & Vegetables
+                </h2>
+                <div className="flex xl:flex-row md:gap-12 gap-4 flex-col ml-6 mb-4 xl:ml-0 xl:mb-0">
+                  <p className="text-white text-[1.1rem]">
+                    Calories: ~350 kcal
+                    <br /> Ingredients:
+                    <br /> • 30g grilled beef – 65 kcal
+                    <br /> • ½ cup mashed potatoes (120g) – 105 kcal <br />• ½
+                    cup cooked vegetables (75g) – 40 kcal <br />• 1 tsp olive
+                    oil (5g) – 45 kcal <br />• Salt & pepper to taste
+                  </p>
+                  <p className="text-white text-[1.1rem] mr-12">
+                    Instructions:
+                    <br /> 1. Grill the beef with a little salt and pepper.
+                    <br /> 2. Prepare mashed potatoes with water or skim milk.
+                    <br />
+                    3. Serve beef with mashed potatoes and cooked vegetables.
+                    <br /> 4. Drizzle olive oil over the vegetables before
+                    serving.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex xl:flex-row gap-12 bg-[#90abb9d7] rounded-3xl overflow-hidden flex-col max-w-[15rem] md:max-w-[30rem] xl:max-w-[90rem] xl:w-[90rem]">
+              <div className="md:max-w-[30rem] max-w-[15rem] ">
+                <Image src={mango} alt="mango" />
+              </div>
+              <div className="flex flex-col gap-5 justify-center items-center xl:items-start">
+                <h2 className="xl:text-[2.5rem]  text-white md:text-[1.5rem] text-[1.1rem]">
+                  Rice & Salmon Bowl
+                </h2>
+                <div className="flex xl:flex-row md:gap-12 gap-4 flex-col ml-6 mb-4 xl:ml-0 xl:mb-0">
+                  <p className="text-white text-[1.1rem]">
+                    Calories: ~340 kcal
+                    <br /> Ingredients:
+                    <br /> • 30g grilled salmon – 60 kcal <br /> • ⅓ cup cooked
+                    rice (50g) – 75 kcal
+                    <br /> • ½ cup cooked vegetables (75g) – 40 kcal <br /> • 1
+                    tsp olive oil (5g) – 45 kcal <br /> • Salt & pepper to taste
                   </p>
                   <p className="text-white text-[1.1rem] mr-12">
                     Instructions: <br />
-                    1. Cook the oats with water or milk if desired. Let them
-                    cool.
+                    1. Grill the salmon with a little salt and pepper.
+                    <br /> 2. Serve it with cooked rice and steamed vegetables.
                     <br />
-                    2. Mix the oats with Greek yogurt in a bowl. <br />
-                    3. Top with blueberries and chopped almonds. <br />
-                    4. Drizzle with honey if desired.
+                    3. Drizzle olive oil over the vegetables before serving.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex xl:flex-row gap-12 bg-[#90abb9d7] rounded-3xl overflow-hidden flex-col max-w-[15rem] md:max-w-[30rem] xl:max-w-[90rem] xl:w-[90rem]">
+              <div className="md:max-w-[30rem] max-w-[15rem] ">
+                <Image src={mango} alt="mango" />
+              </div>
+              <div className="flex flex-col gap-5 justify-center items-center xl:items-start">
+                <h2 className="xl:text-[2.5rem]  text-white md:text-[1.5rem] text-[1.1rem]">
+                  Chicken & Tortilla Wrap
+                </h2>
+                <div className="flex xl:flex-row md:gap-12 gap-4 flex-col ml-6 mb-4 xl:ml-0 xl:mb-0">
+                  <p className="text-white text-[1.1rem]">
+                    Calories: ~340 kcal
+                    <br /> Ingredients:
+                    <br /> • 1 whole wheat tortilla (50g) – 130 kcal
+                    <br /> • 30g grilled chicken – 50 kcal
+                    <br /> • ½ cup cooked vegetables (75g) – 40 kcal
+                    <br /> • 1 tsp olive oil (5g) – 45 kcal <br /> • 1 tbsp
+                    Greek yogurt (15g) – 15 kcal <br /> • Salt & pepper to taste
+                  </p>
+                  <p className="text-white text-[1.1rem] mr-12">
+                    Instructions:
+                    <br /> 1. Spread Greek yogurt over the tortilla.
+                    <br /> 2. Add grilled chicken and cooked vegetables.
+                    <br /> 3. Drizzle with olive oil and season with salt and
+                    pepper.
+                    <br /> 4. Wrap and serve warm or cold. Guava & Orange Fruit
+                    Salad
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex xl:flex-row gap-12 bg-[#90abb9d7] rounded-3xl overflow-hidden flex-col max-w-[15rem] md:max-w-[30rem] xl:max-w-[90rem] xl:w-[90rem]">
+              <div className="md:max-w-[30rem] max-w-[15rem] ">
+                <Image src={mango} alt="mango" />
+              </div>
+              <div className="flex flex-col gap-5 justify-center items-center xl:items-start">
+                <h2 className="xl:text-[2.5rem]  text-white md:text-[1.5rem] text-[1.1rem]">
+                  Guava & Orange Fruit Salad{" "}
+                </h2>
+                <div className="flex xl:flex-row md:gap-12 gap-4 flex-col ml-6 mb-4 xl:ml-0 xl:mb-0">
+                  <p className="text-white text-[1.1rem]">
+                    Calories: ~190 kcal
+                    <br /> Ingredients:
+                    <br /> • 1 whole guava (100g) – 68 kcal
+                    <br /> • 1 small orange (130g) – 62 kcal
+                    <br /> • 12 fresh cherries (60g) – 50 kcal <br />• ½ tsp
+                    lemon juice – 4 kcal <br />• 1 tsp honey (optional, 7g) – 21
+                    kcal
+                  </p>
+                  <p className="text-white text-[1.1rem] mr-12">
+                    Instructions:
+                    <br /> 1. Slice guava and orange into small pieces.
+                    <br /> 2. Add cherries and mix well. <br /> 3. Drizzle with
+                    lemon juice and honey if desired. <br /> 4. Serve fresh as a
+                    light dessert or snack.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex xl:flex-row gap-12 bg-[#90abb9d7] rounded-3xl overflow-hidden flex-col max-w-[15rem] md:max-w-[30rem] xl:max-w-[90rem] xl:w-[90rem]">
+              <div className="md:max-w-[30rem] max-w-[15rem] ">
+                <Image src={mango} alt="mango" />
+              </div>
+              <div className="flex flex-col gap-5 justify-center items-center xl:items-start">
+                <h2 className="xl:text-[2.5rem]  text-white md:text-[1.5rem] text-[1.1rem]">
+                  Quinoa & Egg Bowl
+                </h2>
+                <div className="flex xl:flex-row md:gap-12 gap-4 flex-col ml-6 mb-4 xl:ml-0 xl:mb-0">
+                  <p className="text-white text-[1.1rem]">
+                    Calories: ~300 kcal
+                    <br />
+                    Ingredients: <br />• ⅓ cup cooked quinoa (43g) – 95 kcal{" "}
+                    <br />• 1 boiled egg (50g) – 70 kcal <br />• ½ cup cooked
+                    vegetables (75g) – 40 kcal <br />• 1 tsp olive oil (5g) – 45
+                    kcal <br />• Salt & pepper to taste
+                  </p>
+                  <p className="text-white text-[1.1rem] mr-12">
+                    Instructions:
+                    <br /> 1. Cook the quinoa and set it aside.
+                    <br /> 2. Boil the egg, then slice it.
+                    <br /> 3. Mix quinoa with cooked vegetables and top with the
+                    egg.
+                    <br /> 4. Drizzle with olive oil, season with salt and
+                    pepper, and serve warm.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex xl:flex-row gap-12 bg-[#90abb9d7] rounded-3xl overflow-hidden flex-col max-w-[15rem] md:max-w-[30rem] xl:max-w-[90rem] xl:w-[90rem]">
+              <div className="md:max-w-[30rem] max-w-[15rem] ">
+                <Image src={mango} alt="mango" />
+              </div>
+              <div className="flex flex-col gap-5 justify-center items-center xl:items-start">
+                <h2 className="xl:text-[2.5rem]  text-white md:text-[1.5rem] text-[1.1rem]">
+                  Baked Fish with Mashed Potatoes
+                </h2>
+                <div className="flex xl:flex-row md:gap-12 gap-4 flex-col ml-6 mb-4 xl:ml-0 xl:mb-0">
+                  <p className="text-white text-[1.1rem]">
+                    Calories: ~330 kcal
+                    <br />
+                    Ingredients: <br />• 30g baked fish – 50 kcal <br />• ½ cup
+                    mashed potatoes (120g) – 105 kcal
+                    <br /> • ½ cup cooked vegetables (75g) – 40 kcal <br />• 1
+                    tsp olive oil (5g) – 45 kcal <br />• 1 tsp lemon juice – 4
+                    kcal <br />• Salt & pepper to taste
+                  </p>
+                  <p className="text-white text-[1.1rem] mr-12">
+                    Instructions: <br />
+                    1. Season the fish with salt, pepper, and lemon juice, then
+                    bake at 180°C for 10-15 minutes.
+                    <br /> 2. Prepare mashed potatoes using water or skim milk.
+                    <br /> 3. Serve the baked fish with mashed potatoes and
+                    cooked vegetables.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex xl:flex-row gap-12 bg-[#90abb9d7] rounded-3xl overflow-hidden flex-col max-w-[15rem] md:max-w-[30rem] xl:max-w-[90rem] xl:w-[90rem]">
+              <div className="md:max-w-[30rem] max-w-[15rem] ">
+                <Image src={mango} alt="mango" />
+              </div>
+              <div className="flex flex-col gap-5 justify-center items-center xl:items-start">
+                <h2 className="xl:text-[2.5rem]  text-white md:text-[1.5rem] text-[1.1rem]">
+                  Liver with Rice & Vegetables
+                </h2>
+                <div className="flex xl:flex-row md:gap-12 gap-4 flex-col ml-6 mb-4 xl:ml-0 xl:mb-0">
+                  <p className="text-white text-[1.1rem]">
+                    Calories: ~330 kcal
+                    <br />
+                    Ingredients: <br />• 30g grilled liver – 55 kcal
+                    <br /> • ⅓ cup cooked rice (50g) – 75 kcal <br />• ½ cup
+                    cooked vegetables (75g) – 40 kcal
+                    <br /> • 1 tsp olive oil (5g) – 45 kcal <br />• Salt &
+                    pepper to taste
+                  </p>
+                  <p className="text-white text-[1.1rem] mr-12">
+                    Instructions:
+                    <br /> 1. Grill the liver with a little salt and pepper.
+                    <br /> 2. Serve with cooked rice and steamed vegetables.
+                    <br /> 3. Drizzle olive oil over the vegetables before
+                    serving.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex xl:flex-row gap-12 bg-[#90abb9d7] rounded-3xl overflow-hidden flex-col max-w-[15rem] md:max-w-[30rem] xl:max-w-[90rem] xl:w-[90rem]">
+              <div className="md:max-w-[30rem] max-w-[15rem] ">
+                <img src={"https://modifyhealth.com/cdn/shop/products/ISO_Grilled-Steak-with-Sumac-Carrots_Broccoli-_-Mashed-Potatoes_grande.png?v=1614026268"} alt="mango" />
+              </div>
+              <div className="flex flex-col gap-5 justify-center items-center xl:items-start">
+                <h2 className="xl:text-[2.5rem]  text-white md:text-[1.5rem] text-[1.1rem]">
+                  Grilled Turkey with Mashed Potatoes & Vegetables
+                </h2>
+                <div className="flex xl:flex-row md:gap-12 gap-4 flex-col ml-6 mb-4 xl:ml-0 xl:mb-0">
+                  <p className="text-white text-[1.1rem]">
+                    Calories: ~320 kcal
+                    <br />
+                    Ingredients: <br />• 30g grilled turkey – 50 kcal <br />• ½
+                    cup mashed potatoes (120g) – 105 kcal
+                    <br /> • ½ cup cooked vegetables (75g) – 40 kcal
+                    <br /> • 1 tsp olive oil (5g) – 45 kcal
+                    <br /> • 1 tsp lemon juice – 4 kcal <br />• Salt & pepper to
+                    taste
+                  </p>
+                  <p className="text-white text-[1.1rem] mr-12">
+                    Instructions:
+                    <br /> 1. Grill the Turkey: Season the turkey with salt and
+                    pepper, then grill over medium heat for 5-7 minutes until
+                    fully cooked.
+                    <br /> 2. Prepare Mashed Potatoes: Boil potatoes until soft,
+                    then mash them with a little water or skim milk for a smooth
+                    texture.
+                    <br /> 3. Cook the Vegetables: Steam or lightly sauté the
+                    vegetables.
+                    <br /> 4. Assemble the Plate: Serve the grilled turkey
+                    alongside the mashed potatoes and vegetables.
+                    <br /> 5. Final Touch: Drizzle olive oil and lemon juice
+                    over the vegetables, then serve warm.
                   </p>
                 </div>
               </div>
