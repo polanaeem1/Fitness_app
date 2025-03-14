@@ -5,8 +5,6 @@ import data from "../app/data";
 const Dropdown = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [value, setValue] = useState("");
-  console.log(data[props.meal][props.d]);
-
   return (
     <div
       className="w-full flex flex-col items-center"
